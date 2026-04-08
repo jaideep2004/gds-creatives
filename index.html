@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GDS Creatives — IT Partner for Growing Businesses</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wdth,wght@0,75..125,200..900;1,75..125,200..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wdth,wght@0,75..125,200..900;1,75..125,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index5.css">
 </head>
 
@@ -21,7 +19,8 @@
     <nav id="navbar">
         <a href="#" class="nav-logo">
             <div class="nav-logo-dot"></div>
-            GDS<span>Creatives</span>
+            <!-- GDS<span>Creatives</span> -->
+             <img src="logo2.png" alt="">
         </a>
         <ul class="nav-links">
             <li><a href="#hero">Home</a></li>
@@ -35,6 +34,24 @@
         <a href="#contact" class="nav-cta">
             Free Consultation <span class="btn-arrow">→</span>
         </a>
+        <!-- Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+            <span class="ham-line"></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Nav Drawer -->
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="#hero" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="#process" class="mobile-link">Process</a>
+        <a href="#pricing" class="mobile-link">Pricing</a>
+        <a href="#blog" class="mobile-link">Blog</a>
+        <a href="#reviews" class="mobile-link">Reviews</a>
+        <a href="#contact" class="mobile-link">Free Consultation →</a>
     </nav>
 
     <!-- ══════════════ HERO ══════════════ -->
@@ -52,8 +69,7 @@
                     Your Business
                 </h1>
                 <p class="hero-sub">
-                    We create compelling web designs, which are the right-fit for your target groups and help you grow
-                    faster online.
+                    We create compelling web designs, which are the right-fit for your target groups and help you grow faster online.
                 </p>
                 <div class="hero-btns">
                     <a href="#contact" class="btn-primary">Get Started Now <span class="btn-arrow">→</span></a>
@@ -66,7 +82,7 @@
                 <!-- 99% stat card -->
                 <div class="hero-stat-card">
                     <div class="hero-stat-card-top">
-                        <div class="hero-stat-num">99<sup>%</sup></div>
+                        <div class="hero-stat-num" id="heroStatNum">99<sup>%</sup></div>
                         <div class="hero-stat-leaf">🌿</div>
                     </div>
                     <div class="hero-stat-label">Track and analyze the business reports.</div>
@@ -82,16 +98,13 @@
                 <!-- Main photo card -->
                 <div class="hero-photo-card">
                     <div class="hero-photo-placeholder">
-                        <!-- <span class="photo-icon">👨‍💼</span>
-                        <span style="font-size:12px; color:rgba(255,255,255,0.2);">Add hero1.png</span> -->
                         <img src="hero4c.png" />
                     </div>
                 </div>
 
                 <!-- Curved arrow -->
                 <svg class="hero-arrow-svg" viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 50 C 20 50, 40 10, 72 12" stroke="#f71352" stroke-width="1.5" fill="none"
-                        stroke-dasharray="4 3" opacity="0.6" />
+                    <path d="M5 50 C 20 50, 40 10, 72 12" stroke="#f71352" stroke-width="1.5" fill="none" stroke-dasharray="4 3" opacity="0.6" />
                     <path d="M68 8 L74 13 L67 17" stroke="#f71352" stroke-width="1.5" fill="none" opacity="0.6" />
                 </svg>
 
@@ -157,8 +170,6 @@
                 <div class="about-hex-bg"></div>
                 <div class="about-hexagon-wrap">
                     <div style="text-align:center;">
-                        <!-- <div style="font-size:70px;opacity:0.2;">👥</div>
-                        <div style="color:rgba(255,255,255,0.2);font-size:12px;">Your Photo</div> -->
                         <img src="ab4.png" alt="">
                     </div>
                 </div>
@@ -180,18 +191,14 @@
             <div class="reveal reveal-delay-2">
                 <div class="section-tag">About GDS Creatives</div>
                 <h2 class="section-h2">Your Creative Technology Partner for <em>Growth</em></h2>
-                <p class="section-p">At GDS Creatives, we combine strategy, design, and development to create digital
-                    solutions that don't just look great — they perform. Whether you need a professional business
-                    website, SEO-ready landing pages, automation, or a custom solution, our goal is simple: help you
-                    attract more customers and grow faster online.</p>
+                <p class="section-p">At GDS Creatives, we combine strategy, design, and development to create digital solutions that don't just look great — they perform. Whether you need a professional business website, SEO-ready landing pages, automation, or a custom solution, our goal is simple: help you attract more customers and grow faster online.</p>
                 <div class="about-points">
                     <div class="about-point">Business-focused strategy</div>
                     <div class="about-point">Modern clean design</div>
                     <div class="about-point">SEO-ready from day one</div>
                     <div class="about-point">Scalable solutions</div>
                 </div>
-                <a href="#contact" class="btn-primary">Let's Talk About Your Project <span
-                        class="btn-arrow">→</span></a>
+                <a href="#contact" class="btn-primary">Let's Talk About Your Project <span class="btn-arrow">→</span></a>
             </div>
         </div>
     </section>
@@ -203,63 +210,52 @@
                 <div class="section-tag">What We Offer</div>
                 <h2 class="section-h2">Services Designed to Help Your Business <em>Scale</em></h2>
             </div>
-            <p>From idea to launch — we provide the essential digital services modern businesses need to grow online
-                with confidence.</p>
+            <p>From idea to launch — we provide the essential digital services modern businesses need to grow online with confidence.</p>
         </div>
         <div class="services-bento">
             <div class="svc-card reveal reveal-delay-1">
                 <div class="svc-illustration svc-illus-1">
-
                     <video src="sv1.mp4" autoplay loop muted></video>
                 </div>
                 <div class="svc-card-num">01</div>
                 <div class="svc-card-title">Web Development</div>
-                <div class="svc-card-desc">We build fast, modern, and conversion-focused websites that help businesses
-                    establish a strong online presence and turn visitors into customers.</div>
+                <div class="svc-card-desc">We build fast, modern, and conversion-focused websites that help businesses establish a strong online presence and turn visitors into customers.</div>
                 <a href="#" class="svc-card-link">Learn More →</a>
             </div>
             <div class="svc-card reveal reveal-delay-2">
                 <div class="svc-illustration svc-illus-2">
-
                     <video src="sv2.mp4" autoplay loop muted></video>
                 </div>
                 <div class="svc-card-num">02</div>
                 <div class="svc-card-title">App Development</div>
-                <div class="svc-card-desc">From idea to launch, we create scalable and user-friendly mobile applications
-                    that deliver seamless performance and a smooth customer experience.</div>
+                <div class="svc-card-desc">From idea to launch, we create scalable and user-friendly mobile applications that deliver seamless performance and a smooth customer experience.</div>
                 <a href="#" class="svc-card-link">Learn More →</a>
             </div>
             <div class="svc-card reveal reveal-delay-3">
                 <div class="svc-illustration svc-illus-3">
-
                     <video src="sv3.mp4" autoplay loop muted></video>
                 </div>
                 <div class="svc-card-num">03</div>
                 <div class="svc-card-title">Web Portal</div>
-                <div class="svc-card-desc">Secure and feature-rich custom web portals built with React.js and Node.js to
-                    simplify workflows, improve access, and manage operations efficiently.</div>
+                <div class="svc-card-desc">Secure and feature-rich custom web portals built with React.js and Node.js to simplify workflows, improve access, and manage operations efficiently.</div>
                 <a href="#" class="svc-card-link">Learn More →</a>
             </div>
             <div class="svc-card svc-card-wide reveal reveal-delay-1">
                 <div class="svc-illustration svc-illus-4" style="height:160px;">
-
                     <video src="sv4.mp4" autoplay loop muted></video>
                 </div>
                 <div class="svc-card-num">04</div>
                 <div class="svc-card-title">E-commerce Development</div>
-                <div class="svc-card-desc">High-converting online stores built with modern design, seamless shopping
-                    flow, and the right tools to grow your sales.</div>
+                <div class="svc-card-desc">High-converting online stores built with modern design, seamless shopping flow, and the right tools to grow your sales.</div>
                 <a href="#" class="svc-card-link">Learn More →</a>
             </div>
             <div class="svc-card reveal reveal-delay-2">
                 <div class="svc-illustration svc-illus-5">
-
                     <video src="sv5.mp4" autoplay loop muted></video>
                 </div>
                 <div class="svc-card-num">05</div>
                 <div class="svc-card-title">Business Automation</div>
-                <div class="svc-card-desc">Reduce manual work and save valuable time with automation solutions that
-                    streamline tasks, leads, and internal processes.</div>
+                <div class="svc-card-desc">Reduce manual work and save valuable time with automation solutions that streamline tasks, leads, and internal processes.</div>
                 <a href="#" class="svc-card-link">Learn More →</a>
             </div>
         </div>
@@ -270,8 +266,7 @@
         <div class="process-header reveal">
             <div class="section-tag">Our Process</div>
             <h2 class="section-h2">A Clear Process That Keeps Your Project <em>Smooth & Stress-Free</em></h2>
-            <p>We follow a structured, collaborative workflow ensuring your project is delivered with clarity, quality,
-                and business results in mind.</p>
+            <p>We follow a structured, collaborative workflow ensuring your project is delivered with clarity, quality, and business results in mind.</p>
         </div>
         <div class="process-steps-wrap">
             <div class="process-spine">
@@ -287,8 +282,7 @@
                             <div class="step-content">
                                 <div class="step-num">Step 01</div>
                                 <div class="step-title">Discovery & Requirements</div>
-                                <div class="step-desc">We understand your business goals, audience, and project
-                                    requirements to create an aligned strategy from day one.</div>
+                                <div class="step-desc">We understand your business goals, audience, and project requirements to create an aligned strategy from day one.</div>
                             </div>
                         </div>
                     </div>
@@ -300,8 +294,7 @@
                             <div class="step-content">
                                 <div class="step-num">Step 02</div>
                                 <div class="step-title">Strategy & Planning</div>
-                                <div class="step-desc">A clear plan for design, structure, content flow, and
-                                    functionality ensuring every element has a clear purpose.</div>
+                                <div class="step-desc">A clear plan for design, structure, content flow, and functionality ensuring every element has a clear purpose.</div>
                             </div>
                         </div>
                     </div>
@@ -313,8 +306,7 @@
                             <div class="step-content">
                                 <div class="step-num">Step 03</div>
                                 <div class="step-title">Design & Development</div>
-                                <div class="step-desc">We transform strategy into a modern, responsive, high-performing
-                                    digital solution tailored to your brand.</div>
+                                <div class="step-desc">We transform strategy into a modern, responsive, high-performing digital solution tailored to your brand.</div>
                             </div>
                         </div>
                     </div>
@@ -326,8 +318,7 @@
                             <div class="step-content">
                                 <div class="step-num">Step 04</div>
                                 <div class="step-title">Review & Refinement</div>
-                                <div class="step-desc">You review the work, and we make necessary refinements to ensure
-                                    perfect alignment with your expectations.</div>
+                                <div class="step-desc">You review the work, and we make necessary refinements to ensure perfect alignment with your expectations.</div>
                             </div>
                         </div>
                     </div>
@@ -339,8 +330,7 @@
                             <div class="step-content">
                                 <div class="step-num">Step 05</div>
                                 <div class="step-title">Launch & Optimization</div>
-                                <div class="step-desc">After final approval, we launch and optimize performance, SEO,
-                                    and user experience for maximum results.</div>
+                                <div class="step-desc">After final approval, we launch and optimize performance, SEO, and user experience for maximum results.</div>
                             </div>
                         </div>
                     </div>
@@ -352,8 +342,7 @@
                             <div class="step-content">
                                 <div class="step-num">Step 06</div>
                                 <div class="step-title">Ongoing Support</div>
-                                <div class="step-desc">We remain available for updates, maintenance, improvements, and
-                                    future growth opportunities long-term.</div>
+                                <div class="step-desc">We remain available for updates, maintenance, improvements, and future growth opportunities long-term.</div>
                             </div>
                         </div>
                     </div>
@@ -362,17 +351,17 @@
         </div>
         <div class="process-metrics">
             <div class="process-metric-card reveal reveal-delay-1">
-                <div class="metric-num">200<span>+</span></div>
+                <div class="metric-num" data-target="200" data-suffix="+"><span class="count-val">0</span><span>+</span></div>
                 <div class="metric-title">Projects Delivered</div>
                 <div class="metric-desc">Successfully completed projects for businesses across India and globally.</div>
             </div>
             <div class="process-metric-card reveal reveal-delay-2">
-                <div class="metric-num">99<span>%</span></div>
+                <div class="metric-num" data-target="99" data-suffix="%"><span class="count-val">0</span><span>%</span></div>
                 <div class="metric-title">Client Satisfaction</div>
                 <div class="metric-desc">Our clients consistently rate us 5-stars for quality and communication.</div>
             </div>
             <div class="process-metric-card reveal reveal-delay-3">
-                <div class="metric-num">24<span>h</span></div>
+                <div class="metric-num" data-target="24" data-suffix="h"><span class="count-val">0</span><span>h</span></div>
                 <div class="metric-title">Response Time</div>
                 <div class="metric-desc">We respond to every enquiry within 24 hours — no delays, no wait time.</div>
             </div>
@@ -385,47 +374,39 @@
             <div class="reveal">
                 <div class="section-tag">Why Businesses Choose Us</div>
                 <h2 class="section-h2">Built for <em>Performance</em>. Designed for Growth.</h2>
-                <p class="section-p">Choosing the right digital partner can make a huge difference in how your business
-                    grows online. At GDS Creatives, we build smart digital systems that help you attract, engage, and
-                    convert more customers.</p>
+                <p class="section-p">Choosing the right digital partner can make a huge difference in how your business grows online. At GDS Creatives, we build smart digital systems that help you attract, engage, and convert more customers.</p>
                 <a href="#contact" class="btn-primary">Start Your Project Today <span class="btn-arrow">→</span></a>
             </div>
             <div class="why-features reveal reveal-delay-2">
                 <div class="why-feature"><span class="why-feature-icon">✦</span>
                     <div class="why-feature-title">Modern & Professional Design</div>
-                    <div class="why-feature-desc">Your website will reflect the quality of your brand and create a
-                        strong first impression.</div>
+                    <div class="why-feature-desc">Your website will reflect the quality of your brand and create a strong first impression.</div>
                 </div>
                 <div class="why-feature"><span class="why-feature-icon">⚡</span>
                     <div class="why-feature-title">Fast, Lightweight Performance</div>
-                    <div class="why-feature-desc">We build optimized websites that load quickly and provide a smooth
-                        user experience.</div>
+                    <div class="why-feature-desc">We build optimized websites that load quickly and provide a smooth user experience.</div>
                 </div>
                 <div class="why-feature"><span class="why-feature-icon">🔍</span>
                     <div class="why-feature-title">SEO-Ready Structure</div>
-                    <div class="why-feature-desc">From headings to internal structure, your site is built with search
-                        visibility in mind.</div>
+                    <div class="why-feature-desc">From headings to internal structure, your site is built with search visibility in mind.</div>
                 </div>
                 <div class="why-feature"><span class="why-feature-icon">🎯</span>
                     <div class="why-feature-title">Conversion-Focused Layout</div>
-                    <div class="why-feature-desc">Every section is designed to guide visitors toward action — enquiry,
-                        booking, or purchase.</div>
+                    <div class="why-feature-desc">Every section is designed to guide visitors toward action — enquiry, booking, or purchase.</div>
                 </div>
                 <div class="why-feature"><span class="why-feature-icon">💬</span>
                     <div class="why-feature-title">Transparent Communication</div>
-                    <div class="why-feature-desc">Clear process, realistic timelines, and direct support without
-                        unnecessary confusion.</div>
+                    <div class="why-feature-desc">Clear process, realistic timelines, and direct support without unnecessary confusion.</div>
                 </div>
                 <div class="why-feature"><span class="why-feature-icon">🔧</span>
                     <div class="why-feature-title">Long-Term Support</div>
-                    <div class="why-feature-desc">We don't disappear after launch. We're here to help you grow and
-                        improve over time.</div>
+                    <div class="why-feature-desc">We don't disappear after launch. We're here to help you grow and improve over time.</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ══════════════ PORTFOLIO — Image 2 style carousel ══════════════ -->
+    <!-- ══════════════ PORTFOLIO ══════════════ -->
     <section id="portfolio">
         <div class="portfolio-header">
             <div class="reveal">
@@ -433,10 +414,8 @@
                 <h2 class="section-h2">Projects That Speak for <em>Themselves</em></h2>
             </div>
             <div class="portfolio-header-right reveal reveal-delay-2">
-                <p>We strive to develop real-world digital solutions that are ideal for small to large projects with
-                    bespoke requirements.</p>
-                <a href="#contact" class="btn-primary" style="display:inline-flex;">More Projects <span
-                        class="btn-arrow">↗</span></a>
+                <p>We strive to develop real-world digital solutions that are ideal for small to large projects with bespoke requirements.</p>
+                <a href="#contact" class="btn-primary" style="display:inline-flex;">More Projects <span class="btn-arrow">↗</span></a>
             </div>
         </div>
 
@@ -449,8 +428,7 @@
                         <div class="pf-overlay">
                             <div class="pf-overlay-tag">Web Dev</div>
                             <div class="pf-overlay-title">Business Website</div>
-                            <div class="pf-overlay-desc">Modern, conversion-focused site built for maximum lead
-                                generation.</div>
+                            <div class="pf-overlay-desc">Modern, conversion-focused site built for maximum lead generation.</div>
                         </div>
                     </div>
                 </div>
@@ -461,8 +439,7 @@
                         <div class="pf-overlay">
                             <div class="pf-overlay-tag">App Dev</div>
                             <div class="pf-overlay-title">Mobile App Launch</div>
-                            <div class="pf-overlay-desc">User-friendly cross-platform app with seamless onboarding and
-                                intuitive design flow.</div>
+                            <div class="pf-overlay-desc">User-friendly cross-platform app with seamless onboarding and intuitive design flow.</div>
                         </div>
                     </div>
                 </div>
@@ -473,8 +450,7 @@
                         <div class="pf-overlay">
                             <div class="pf-overlay-tag">E-commerce</div>
                             <div class="pf-overlay-title">Online Store Build</div>
-                            <div class="pf-overlay-desc">High-converting e-commerce store with smooth checkout flow and
-                                inventory management.</div>
+                            <div class="pf-overlay-desc">High-converting e-commerce store with smooth checkout flow and inventory management.</div>
                         </div>
                     </div>
                 </div>
@@ -485,55 +461,51 @@
                         <div class="pf-overlay">
                             <div class="pf-overlay-tag">Automation</div>
                             <div class="pf-overlay-title">Business Workflow</div>
-                            <div class="pf-overlay-desc">Full automation suite that saves 10+ hours per week and
-                                eliminates repetitive tasks.</div>
+                            <div class="pf-overlay-desc">Full automation suite that saves 10+ hours per week and eliminates repetitive tasks.</div>
                         </div>
                     </div>
                 </div>
                 <div class="pf-card side" data-index="4">
                     <div class="pf-img-area">
                         <div class="pf-img-gradient" style="background:linear-gradient(135deg,#120c00,#2a1c00);"></div>
-                        <div class="pf-img-icon">⚙️</div>
+                        <div class="pf-img-icon">🎨</div>
                         <div class="pf-overlay">
-                            <div class="pf-overlay-tag">Automation</div>
-                            <div class="pf-overlay-title">Business Workflow</div>
-                            <div class="pf-overlay-desc">Full automation suite that saves 10+ hours per week and
-                                eliminates repetitive tasks.</div>
+                            <div class="pf-overlay-tag">Design</div>
+                            <div class="pf-overlay-title">Brand Identity</div>
+                            <div class="pf-overlay-desc">Complete brand identity system with logo, color palette, and design guidelines.</div>
                         </div>
                     </div>
                 </div>
                 <div class="pf-card side" data-index="5">
                     <div class="pf-img-area">
                         <div class="pf-img-gradient" style="background:linear-gradient(135deg,#120c00,#2a1c00);"></div>
-                        <div class="pf-img-icon">⚙️</div>
+                        <div class="pf-img-icon">📊</div>
                         <div class="pf-overlay">
-                            <div class="pf-overlay-tag">Automation</div>
-                            <div class="pf-overlay-title">Business Workflow</div>
-                            <div class="pf-overlay-desc">Full automation suite that saves 10+ hours per week and
-                                eliminates repetitive tasks.</div>
+                            <div class="pf-overlay-tag">Web Portal</div>
+                            <div class="pf-overlay-title">Analytics Dashboard</div>
+                            <div class="pf-overlay-desc">Real-time business analytics portal with custom reporting and data visualization.</div>
                         </div>
                     </div>
                 </div>
                 <div class="pf-card side" data-index="6">
                     <div class="pf-img-area">
                         <div class="pf-img-gradient" style="background:linear-gradient(135deg,#120c00,#2a1c00);"></div>
-                        <div class="pf-img-icon">⚙️</div>
+                        <div class="pf-img-icon">🤖</div>
                         <div class="pf-overlay">
-                            <div class="pf-overlay-tag">Automation</div>
-                            <div class="pf-overlay-title">Business Workflow</div>
-                            <div class="pf-overlay-desc">Full automation suite that saves 10+ hours per week and
-                                eliminates repetitive tasks.</div>
+                            <div class="pf-overlay-tag">AI Integration</div>
+                            <div class="pf-overlay-title">AI-Powered Site</div>
+                            <div class="pf-overlay-desc">Smart website with AI chat, product recommendations and personalization engine.</div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
         <div class="portfolio-nav">
             <button class="pf-nav-btn" id="pfPrev">‹</button>
             <button class="pf-nav-btn active-btn" id="pfNext">›</button>
         </div>
+        <div class="portfolio-progress" id="pfDots"></div>
     </section>
 
     <!-- ══════════════ PRICING ══════════════ -->
@@ -541,8 +513,7 @@
         <div class="pricing-header reveal">
             <div class="section-tag">Pricing Plans</div>
             <h2 class="section-h2">Flexible Packages for Different <em>Business Needs</em></h2>
-            <p class="section-p">Whether you're just starting out or scaling your business, we offer solutions tailored
-                to your goals and budget.</p>
+            <p class="section-p">Whether you're just starting out or scaling your business, we offer solutions tailored to your goals and budget.</p>
         </div>
         <div class="pricing-cards">
             <div class="price-card reveal reveal-delay-1">
@@ -596,8 +567,7 @@
                 <a href="#contact" class="price-cta">Request Quote</a>
             </div>
         </div>
-        <p class="pricing-note reveal">Need something custom? We'll recommend the most suitable option based on your
-            goals and budget.</p>
+        <p class="pricing-note reveal">Need something custom? We'll recommend the most suitable option based on your goals and budget.</p>
     </section>
 
     <!-- ══════════════ CONTACT ══════════════ -->
@@ -605,16 +575,13 @@
         <div style="text-align:center;max-width:700px;margin:0 auto 70px;" class="reveal">
             <div class="section-tag" style="justify-content:center;">Let's Build Something Great</div>
             <h2 class="section-h2" style="color:var(--black);">Ready to Start Your <em>Next Project</em>?</h2>
-            <p style="font-size:15px;color:var(--gray-700);line-height:1.7;">Tell us what you need, and we'll get
-                back to you with the best approach for your business.</p>
+            <p style="font-size:15px;color:var(--gray-700);line-height:1.7;">Tell us what you need, and we'll get back to you with the best approach for your business.</p>
         </div>
         <div class="contact-inner">
             <div class="reveal">
                 <div class="section-tag">Get In Touch</div>
-                <h3 style="font-size:26px;font-weight:850;color:var(--black);letter-spacing:-0.8px;margin-bottom:14px;">
-                    Let's talk about your project</h3>
-                <p class="section-p" style="color:var(--gray-700);">We'd love to hear about your vision. Our team
-                    responds within 24 hours with a practical plan and transparent pricing.</p>
+                <h3 style="font-size:26px;font-weight:850;color:var(--black);letter-spacing:-0.8px;margin-bottom:14px;">Let's talk about your project</h3>
+                <p class="section-p" style="color:var(--gray-700);">We'd love to hear about your vision. Our team responds within 24 hours with a practical plan and transparent pricing.</p>
                 <div class="contact-info">
                     <div class="contact-info-item">
                         <div class="contact-info-icon">✉️</div>
@@ -644,14 +611,11 @@
                 <div class="form-sub">Fill out the form and we'll reach out within 24 hours.</div>
                 <div class="form-row">
                     <div class="form-group"><label>Full Name *</label><input type="text" placeholder="John Smith"></div>
-                    <div class="form-group"><label>Email Address *</label><input type="email"
-                            placeholder="john@company.com"></div>
+                    <div class="form-group"><label>Email Address *</label><input type="email" placeholder="john@company.com"></div>
                 </div>
                 <div class="form-row">
-                    <div class="form-group"><label>Phone / WhatsApp</label><input type="tel"
-                            placeholder="+91 XXXXX XXXXX"></div>
-                    <div class="form-group"><label>Company Name</label><input type="text" placeholder="Your Company">
-                    </div>
+                    <div class="form-group"><label>Phone / WhatsApp</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
+                    <div class="form-group"><label>Company Name</label><input type="text" placeholder="Your Company"></div>
                 </div>
                 <div class="form-row">
                     <div class="form-group"><label>Service Needed</label>
@@ -676,18 +640,14 @@
                         </select>
                     </div>
                 </div>
-                <div class="form-group"><label>Project Details</label><textarea
-                        placeholder="Tell us about your project, goals, and any specific requirements..."></textarea>
-                </div>
-                <button class="btn-primary"
-                    style="width:100%;justify-content:center;border:none;font-size:14px;cursor:pointer;">Send Project
-                    Enquiry →</button>
+                <div class="form-group"><label>Project Details</label><textarea placeholder="Tell us about your project, goals, and any specific requirements..."></textarea></div>
+                <button class="btn-primary" style="width:100%;justify-content:center;border:none;font-size:14px;cursor:pointer;">Send Project Enquiry →</button>
                 <div class="form-trust">🔒 Your information stays private. No spam, no unnecessary follow-ups.</div>
             </div>
         </div>
     </section>
 
-    <!-- ══════════════ BLOG — Image 3 style ══════════════ -->
+    <!-- ══════════════ BLOG ══════════════ -->
     <section id="blog">
         <div class="blog-header">
             <div class="blog-header-left reveal">
@@ -702,7 +662,6 @@
             </div>
         </div>
         <div class="blog-grid">
-            <!-- Blog card 1 -->
             <div class="blog-card reveal reveal-delay-1">
                 <div class="blog-photo">
                     <div class="blog-photo-bg" style="background:linear-gradient(135deg,#f71352,#ff6b35);"></div>
@@ -714,10 +673,8 @@
                     <span class="blog-readtime">7 min read</span>
                 </div>
                 <div class="blog-title">10 Web Design Trends Dominating 2026 and How to Use Them</div>
-                <div class="blog-excerpt">We strive to develop real-world web solutions that are ideal for small to
-                    large projects with bespoke project requirements.</div>
+                <div class="blog-excerpt">We strive to develop real-world web solutions that are ideal for small to large projects with bespoke project requirements.</div>
             </div>
-            <!-- Blog card 2 -->
             <div class="blog-card reveal reveal-delay-2">
                 <div class="blog-photo">
                     <div class="blog-photo-bg" style="background:linear-gradient(135deg,#0a0a0a,#2d0010);"></div>
@@ -729,10 +686,8 @@
                     <span class="blog-readtime">5 min read</span>
                 </div>
                 <div class="blog-title">Why SEO-Ready Structure Matters More Than Ever for Small Businesses</div>
-                <div class="blog-excerpt">We strive to develop real-world web solutions that are ideal for small to
-                    large projects with bespoke project requirements.</div>
+                <div class="blog-excerpt">We strive to develop real-world web solutions that are ideal for small to large projects with bespoke project requirements.</div>
             </div>
-            <!-- Blog card 3 -->
             <div class="blog-card reveal reveal-delay-3">
                 <div class="blog-photo">
                     <div class="blog-photo-bg" style="background:linear-gradient(135deg,#1a1a0a,#3d2000);"></div>
@@ -744,8 +699,7 @@
                     <span class="blog-readtime">4 min read</span>
                 </div>
                 <div class="blog-title">How Business Automation Can Save You 10+ Hours Every Week</div>
-                <div class="blog-excerpt">We strive to develop real-world web solutions that are ideal for small to
-                    large projects with bespoke project requirements.</div>
+                <div class="blog-excerpt">We strive to develop real-world web solutions that are ideal for small to large projects with bespoke project requirements.</div>
             </div>
         </div>
     </section>
@@ -755,110 +709,164 @@
         <div class="reviews-header reveal">
             <div class="section-tag">Trusted By Businesses</div>
             <h2 class="section-h2">Brands & Businesses We've <em>Worked With</em></h2>
-            <p class="section-p">We're proud to collaborate with startups, founders, and businesses looking for quality
-                digital work and long-term growth.</p>
+            <p class="section-p">We're proud to collaborate with startups, founders, and businesses looking for quality digital work and long-term growth.</p>
         </div>
         <div class="brands-slider">
             <div class="brands-track">
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>TechStart India
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>GrowthHive
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>PixelForge
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>NovaBrands
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>RapidScale
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>BuildX Studio
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>MarketEdge
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>LaunchPad Co.
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>TechStart India
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>GrowthHive
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>PixelForge
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>NovaBrands
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>RapidScale
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>BuildX Studio
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>MarketEdge
-                </div>
-                <div class="brand-logo-item">
-                    <div class="brand-logo-dot"></div>LaunchPad Co.
-                </div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>TechStart India</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>GrowthHive</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>PixelForge</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>NovaBrands</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>RapidScale</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>BuildX Studio</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>MarketEdge</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>LaunchPad Co.</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>TechStart India</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>GrowthHive</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>PixelForge</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>NovaBrands</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>RapidScale</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>BuildX Studio</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>MarketEdge</div>
+                <div class="brand-logo-item"><div class="brand-logo-dot"></div>LaunchPad Co.</div>
             </div>
         </div>
-        <div class="reviews-grid-bottom" id="reviewsBottom">
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <div class="review-text">Working with GDS was refreshingly different. No unnecessary jargon, clear
-                    timelines, and the finished product exceeded our expectations. Our app got 500+ downloads in week
-                    one.</div>
-                <div class="review-author">
-                    <div class="review-avatar" style="background:var(--black);">K</div>
-                    <div>
-                        <div class="review-name">Karan Patel</div>
-                        <div class="review-role">Founder, BuildX Studio</div>
+
+        <!-- Auto-scrolling reviews -->
+        <div class="reviews-slider-wrap">
+            <div class="reviews-grid-bottom" id="reviewsTrack">
+                <!-- Reviews duplicated for infinite scroll -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">Working with GDS was refreshingly different. No unnecessary jargon, clear timelines, and the finished product exceeded our expectations. Our app got 500+ downloads in week one.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:var(--black);">K</div>
+                        <div>
+                            <div class="review-name">Karan Patel</div>
+                            <div class="review-role">Founder, BuildX Studio</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <div class="review-text">The AI-powered features they integrated have made our customer interactions so
-                    much smarter. Engagement on our website has more than doubled since the new build went live.</div>
-                <div class="review-author">
-                    <div class="review-avatar" style="background:var(--red);">M</div>
-                    <div>
-                        <div class="review-name">Meera Joshi</div>
-                        <div class="review-role">CMO, MarketEdge</div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">The AI-powered features they integrated have made our customer interactions so much smarter. Engagement on our website has more than doubled since the new build went live.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:var(--red);">M</div>
+                        <div>
+                            <div class="review-name">Meera Joshi</div>
+                            <div class="review-role">CMO, MarketEdge</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <div class="review-text">I've worked with several agencies before but GDS Creatives stands apart. Their
-                    attention to detail in conversion-focused design has made a visible difference to our bottom line.
-                </div>
-                <div class="review-author">
-                    <div class="review-avatar" style="background:#ff6b35;">V</div>
-                    <div>
-                        <div class="review-name">Vikram Singh</div>
-                        <div class="review-role">CEO, LaunchPad Co.</div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">I've worked with several agencies before but GDS Creatives stands apart. Their attention to detail in conversion-focused design has made a visible difference to our bottom line.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:#ff6b35;">V</div>
+                        <div>
+                            <div class="review-name">Vikram Singh</div>
+                            <div class="review-role">CEO, LaunchPad Co.</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="review-card">
-                <div class="review-stars">★★★★★</div>
-                <div class="review-text">Great value for the quality delivered. They treated our small startup with the
-                    same care as a large enterprise. The web portal they built streamlined our entire client onboarding
-                    process.</div>
-                <div class="review-author">
-                    <div class="review-avatar" style="background:var(--black);">D</div>
-                    <div>
-                        <div class="review-name">Deepa Nair</div>
-                        <div class="review-role">Operations Lead, PixelForge</div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">Great value for the quality delivered. They treated our small startup with the same care as a large enterprise. The web portal they built streamlined our entire client onboarding process.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:var(--black);">D</div>
+                        <div>
+                            <div class="review-name">Deepa Nair</div>
+                            <div class="review-role">Operations Lead, PixelForge</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">The team delivered a beautiful, fast website in under 3 weeks. Our inquiry rate jumped by 40% in the first month. Highly recommend for any business looking to scale online.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:#7c3aed;">R</div>
+                        <div>
+                            <div class="review-name">Rahul Mehta</div>
+                            <div class="review-role">Director, RapidScale</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">Absolutely love the e-commerce store they built for us. The checkout conversion rate improved by 35% compared to our old site. Professional, fast, and responsive team throughout.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:#059669;">S</div>
+                        <div>
+                            <div class="review-name">Sunita Sharma</div>
+                            <div class="review-role">CEO, NovaBrands</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Duplicate for seamless loop -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">Working with GDS was refreshingly different. No unnecessary jargon, clear timelines, and the finished product exceeded our expectations. Our app got 500+ downloads in week one.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:var(--black);">K</div>
+                        <div>
+                            <div class="review-name">Karan Patel</div>
+                            <div class="review-role">Founder, BuildX Studio</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">The AI-powered features they integrated have made our customer interactions so much smarter. Engagement on our website has more than doubled since the new build went live.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:var(--red);">M</div>
+                        <div>
+                            <div class="review-name">Meera Joshi</div>
+                            <div class="review-role">CMO, MarketEdge</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">I've worked with several agencies before but GDS Creatives stands apart. Their attention to detail in conversion-focused design has made a visible difference to our bottom line.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:#ff6b35;">V</div>
+                        <div>
+                            <div class="review-name">Vikram Singh</div>
+                            <div class="review-role">CEO, LaunchPad Co.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">Great value for the quality delivered. They treated our small startup with the same care as a large enterprise. The web portal they built streamlined our entire client onboarding process.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:var(--black);">D</div>
+                        <div>
+                            <div class="review-name">Deepa Nair</div>
+                            <div class="review-role">Operations Lead, PixelForge</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">The team delivered a beautiful, fast website in under 3 weeks. Our inquiry rate jumped by 40% in the first month. Highly recommend for any business looking to scale online.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:#7c3aed;">R</div>
+                        <div>
+                            <div class="review-name">Rahul Mehta</div>
+                            <div class="review-role">Director, RapidScale</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-text">Absolutely love the e-commerce store they built for us. The checkout conversion rate improved by 35% compared to our old site. Professional, fast, and responsive team throughout.</div>
+                    <div class="review-author">
+                        <div class="review-avatar" style="background:#059669;">S</div>
+                        <div>
+                            <div class="review-name">Sunita Sharma</div>
+                            <div class="review-role">CEO, NovaBrands</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -879,9 +887,8 @@
         </div>
         <div class="footer-top">
             <div class="footer-left">
-                <div class="footer-logo">GDS<span>Creatives</span></div>
-                <div class="footer-tagline">Building smart digital systems that help businesses attract, engage, and
-                    convert more customers through strategy, design, and development.</div>
+                <div class="footer-logo"><img src="logo.jpeg" alt=""></div>
+                <div class="footer-tagline">Building smart digital systems that help businesses attract, engage, and convert more customers through strategy, design, and development.</div>
                 <div class="newsletter-wrap">
                     <input class="newsletter-input" type="email" placeholder="enter your email">
                     <button class="newsletter-btn">Subscribe</button>
@@ -947,15 +954,85 @@
             document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
         });
 
+        // ─── Hamburger menu ───
+        const hamburger = document.getElementById('hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileNav.classList.toggle('open');
+        });
+
+        // Close mobile nav when a link is clicked
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('open');
+                mobileNav.classList.remove('open');
+            });
+        });
+
+        // Close on outside click
+        document.addEventListener('click', e => {
+            if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
+                hamburger.classList.remove('open');
+                mobileNav.classList.remove('open');
+            }
+        });
+
         // ─── Scroll reveal ───
         const revealObs = new IntersectionObserver(entries => {
             entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
         }, { threshold: 0.08, rootMargin: '0px 0px -50px 0px' });
         document.querySelectorAll('.reveal').forEach(r => revealObs.observe(r));
 
-        // ─── Portfolio carousel ───
+        // ─── Counter animation ───
+        function animateCounter(el) {
+            const target = parseInt(el.dataset.target);
+            const countEl = el.querySelector('.count-val');
+            if (!countEl) return;
+            let current = 0;
+            const duration = 1800;
+            const step = target / (duration / 16);
+            const timer = setInterval(() => {
+                current += step;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                countEl.textContent = Math.floor(current);
+            }, 16);
+        }
+
+        const counterObs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    animateCounter(e.target);
+                    counterObs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.metric-num[data-target]').forEach(el => counterObs.observe(el));
+
+        // ─── Portfolio carousel with auto-slide ───
         const cards = document.querySelectorAll('.pf-card');
         let activeIdx = 1;
+        let autoSlideTimer;
+
+        // Build dots
+        const dotsContainer = document.getElementById('pfDots');
+        cards.forEach((_, i) => {
+            const dot = document.createElement('div');
+            dot.className = 'portfolio-dot' + (i === 1 ? ' active' : '');
+            dot.addEventListener('click', () => { updateCarousel(i); resetAutoSlide(); });
+            dotsContainer.appendChild(dot);
+        });
+
+        function updateDots(idx) {
+            document.querySelectorAll('.portfolio-dot').forEach((d, i) => {
+                d.classList.toggle('active', i === idx);
+            });
+        }
 
         function updateCarousel(newIdx) {
             cards.forEach((card, i) => {
@@ -964,30 +1041,42 @@
                 else card.classList.add('side');
             });
             activeIdx = newIdx;
+            updateDots(newIdx);
 
-            // center the active card
             const track = document.getElementById('pfTrack');
             const activeCard = cards[activeIdx];
-            const trackRect = track.parentElement.getBoundingClientRect();
-            const cardRect = activeCard.getBoundingClientRect();
-
-            // compute offset so active card is centered
             const offset = (activeCard.offsetLeft + activeCard.offsetWidth / 2) - (track.parentElement.offsetWidth / 2);
             track.style.transform = `translateX(-${offset}px)`;
         }
 
+        function startAutoSlide() {
+            autoSlideTimer = setInterval(() => {
+                updateCarousel((activeIdx + 1) % cards.length);
+            }, 3500);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideTimer);
+            startAutoSlide();
+        }
+
         document.getElementById('pfNext').addEventListener('click', () => {
             updateCarousel((activeIdx + 1) % cards.length);
+            resetAutoSlide();
         });
         document.getElementById('pfPrev').addEventListener('click', () => {
             updateCarousel((activeIdx - 1 + cards.length) % cards.length);
+            resetAutoSlide();
         });
         cards.forEach((card, i) => {
-            card.addEventListener('click', () => updateCarousel(i));
+            card.addEventListener('click', () => { updateCarousel(i); resetAutoSlide(); });
         });
 
-        // initial position
-        setTimeout(() => updateCarousel(1), 100);
+        // Pause auto-slide on hover
+        document.querySelector('.portfolio-carousel-outer').addEventListener('mouseenter', () => clearInterval(autoSlideTimer));
+        document.querySelector('.portfolio-carousel-outer').addEventListener('mouseleave', startAutoSlide);
+
+        setTimeout(() => { updateCarousel(1); startAutoSlide(); }, 100);
 
         // ─── Nav active link ───
         const sections = document.querySelectorAll('section[id]');
@@ -1001,7 +1090,88 @@
                 a.parentElement.classList.toggle('active', a.getAttribute('href') === '#' + cur);
             });
         });
+
+        // ─── Staggered reveal for process steps ───
+        document.querySelectorAll('.process-step').forEach((step, i) => {
+            step.style.transitionDelay = (i * 0.08) + 's';
+        });
+
+        // ─── Tilt effect on service cards ───
+        document.querySelectorAll('.svc-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width - 0.5) * 8;
+                const y = ((e.clientY - rect.top) / rect.height - 0.5) * -8;
+                card.style.transform = `translateY(-6px) perspective(600px) rotateY(${x}deg) rotateX(${y}deg)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        // ─── Tilt effect on pricing cards ───
+        document.querySelectorAll('.price-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width - 0.5) * 6;
+                const y = ((e.clientY - rect.top) / rect.height - 0.5) * -6;
+                card.style.transform = `translateY(-6px) perspective(600px) rotateY(${x}deg) rotateX(${y}deg)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+            });
+        });
+
+        // ─── Magnetic button effect on CTAs ───
+        document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
+            btn.addEventListener('mousemove', e => {
+                const rect = btn.getBoundingClientRect();
+                const x = (e.clientX - rect.left - rect.width / 2) * 0.2;
+                const y = (e.clientY - rect.top - rect.height / 2) * 0.2;
+                btn.style.transform = `translate(${x}px, ${y}px) translateY(-2px)`;
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = '';
+            });
+        });
+
+        // ─── Ripple effect on buttons ───
+        document.querySelectorAll('.btn-primary, .price-cta').forEach(btn => {
+            btn.addEventListener('click', e => {
+                const ripple = document.createElement('span');
+                const rect = btn.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                ripple.style.cssText = `
+                    position: absolute;
+                    width: ${size}px; height: ${size}px;
+                    left: ${e.clientX - rect.left - size/2}px;
+                    top: ${e.clientY - rect.top - size/2}px;
+                    background: rgba(255,255,255,0.25);
+                    border-radius: 50%;
+                    transform: scale(0);
+                    animation: rippleAnim 0.5s ease-out forwards;
+                    pointer-events: none;
+                `;
+                btn.style.position = 'relative';
+                btn.style.overflow = 'hidden';
+                btn.appendChild(ripple);
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Inject ripple keyframe
+        const rippleStyle = document.createElement('style');
+        rippleStyle.textContent = `@keyframes rippleAnim { to { transform: scale(2); opacity: 0; } }`;
+        document.head.appendChild(rippleStyle);
+
+        // ─── Scroll-triggered bar animation for hero stat card ───
+        // Already CSS animated, but we can add a number ticker on load
+        let heroNumAnimated = false;
+        window.addEventListener('scroll', () => {
+            if (!heroNumAnimated && window.scrollY < 200) {
+                heroNumAnimated = true;
+            }
+        });
     </script>
 </body>
-
 </html>
