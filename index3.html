@@ -1,0 +1,2015 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDS Creatives — Web & Software Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="index2.css" />
+</head>
+
+<body>
+    <div class="x-scroll-layer">
+        <div class="x-shape x-shape-a"></div>
+        <div class="x-shape x-shape-b"></div>
+    </div>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav-logo">GDS <span>Creatives</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode"></button>
+            <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            <a href="#contact" class="nav-cta">Start a Project</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <canvas id="hero-blob-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>Premium Digital Agency · Est. 2018</div>
+            <h1 class="hero-headline">We Build<br><span class="italic">Things That</span><br><span
+                    class="accent">Grow</span> Your<br>Business.</h1>
+            <p class="hero-sub">Strategic design and software development for brands that demand excellence — delivered
+                fast, built to last.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-primary">Start a Project
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <a href="#services" class="btn-ghost">
+                    <span class="btn-ghost-arrow"><svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></span>
+                    Explore our work
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual" id="heroVisual">
+            <div class="blob-backdrop">
+                <div class="blob-shape blob-1"></div>
+                <div class="blob-shape blob-2"></div>
+                <div class="blob-shape blob-3"></div>
+                <div class="blob-shape blob-4"></div>
+                <div class="blob-shape blob-5"></div>
+                <div class="blob-shape blob-6"></div>
+            </div>
+
+            <div class="float-card fc-visitors">
+                <div class="fc-v-label"><span class="live-dot"></span>Live Visitors</div>
+                <div class="fc-v-num" id="visitorCount">2,<span>481</span></div>
+                <div class="fc-v-sub">Active right now</div>
+                <svg class="fc-v-sparkline" id="sparklineSvg" viewBox="0 0 140 22" preserveAspectRatio="none">
+                    <polyline id="sparklineLine" fill="none" stroke="#f71352" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <polyline id="sparklineFill" fill="url(#sparkGrad)" stroke="none" />
+                    <defs>
+                        <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#f71352" stop-opacity="0.2" />
+                            <stop offset="100%" stop-color="#f71352" stop-opacity="0" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="browser-frame" id="browserFrame">
+                <div class="browser-bar">
+                    <div class="browser-dots">
+                        <div class="browser-dot bd-red"></div>
+                        <div class="browser-dot bd-yellow"></div>
+                        <div class="browser-dot bd-green"></div>
+                    </div>
+                    <div class="browser-tabs" id="browserTabs">
+                        <button class="browser-tab active" data-tab="0">
+                            <div class="browser-tab-favicon" style="background:linear-gradient(135deg,#f71352,#6e34de)">
+                            </div>
+                            DataFlow<div class="browser-tab-close">×</div>
+                        </button>
+                        <button class="browser-tab" data-tab="1">
+                            <div class="browser-tab-favicon" style="background:#0a0a0f"></div>
+                            LuxeShop<div class="browser-tab-close">×</div>
+                        </button>
+                        <button class="browser-tab" data-tab="2">
+                            <div class="browser-tab-favicon" style="background:linear-gradient(90deg,#f71352,#6e34de)">
+                            </div>
+                            StudioX<div class="browser-tab-close">×</div>
+                        </button>
+                        <button class="browser-tab" data-tab="3">
+                            <div class="browser-tab-favicon" style="background:#28c840"></div>
+                            Metrics<div class="browser-tab-close">×</div>
+                        </button>
+                    </div>
+                    <div class="browser-url" id="browserUrl">
+                        <span class="url-lock">🔒</span>
+                        <span class="url-text" id="urlText">app.dataflow.io</span>
+                    </div>
+                </div>
+                <div class="browser-content">
+                    <div class="tab-slides" id="tabSlides">
+                        <div class="tab-slide active" id="slide0">
+                            <div class="s1-nav">
+                                <div class="s1-logo">
+                                    <div class="s1-logo-dot"></div>DataFlow
+                                </div>
+                                <div class="s1-nav-items">
+                                    <div class="s1-nav-item active">Dashboard</div>
+                                    <div class="s1-nav-item">Analytics</div>
+                                    <div class="s1-nav-item">Reports</div>
+                                </div>
+                                <div class="s1-avatar"></div>
+                            </div>
+                            <div class="s1-body">
+                                <div class="s1-sidebar">
+                                    <div class="s1-sidebar-item active">
+                                        <div class="s1-sidebar-icon"
+                                            style="background:linear-gradient(135deg,#f71352,#6e34de)"></div>Overview
+                                    </div>
+                                    <div class="s1-sidebar-item">
+                                        <div class="s1-sidebar-icon" style="background:#4d9de0"></div>Analytics
+                                    </div>
+                                    <div class="s1-sidebar-item">
+                                        <div class="s1-sidebar-icon" style="background:#28c840"></div>Revenue
+                                    </div>
+                                    <div class="s1-sidebar-item">
+                                        <div class="s1-sidebar-icon" style="background:#f59e0b"></div>Users
+                                    </div>
+                                    <div class="s1-sidebar-item">
+                                        <div class="s1-sidebar-icon" style="background:#6e34de"></div>Settings
+                                    </div>
+                                </div>
+                                <div class="s1-main">
+                                    <div class="s1-stats-row">
+                                        <div class="s1-stat">
+                                            <div class="s1-stat-val">$48<span class="acc">K</span></div>
+                                            <div class="s1-stat-lbl">Revenue</div>
+                                            <div class="s1-stat-trend">↑ 18.4%</div>
+                                        </div>
+                                        <div class="s1-stat">
+                                            <div class="s1-stat-val">2<span class="acc">.</span>4K</div>
+                                            <div class="s1-stat-lbl">Users</div>
+                                            <div class="s1-stat-trend">↑ 12.1%</div>
+                                        </div>
+                                        <div class="s1-stat">
+                                            <div class="s1-stat-val">97<span class="acc">%</span></div>
+                                            <div class="s1-stat-lbl">Uptime</div>
+                                            <div class="s1-stat-trend">↑ 0.3%</div>
+                                        </div>
+                                    </div>
+                                    <div class="s1-chart-area">
+                                        <div class="s1-chart-head"><span class="s1-chart-title">Monthly
+                                                Revenue</span><span class="s1-chart-badge">+24.8%</span></div>
+                                        <div class="s1-bars" id="s1Bars"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-slide" id="slide1">
+                            <div class="s2-header">
+                                <div class="s2-logo">Luxe<span>Shop</span></div>
+                                <div class="s2-header-icons"><span class="s2-icon">🔍</span>
+                                    <div class="s2-cart-badge">🛒 3</div>
+                                </div>
+                            </div>
+                            <div class="s2-hero">
+                                <div>
+                                    <div class="s2-hero-tag">New Collection 2025</div>
+                                    <div class="s2-hero-h">Elevate Your <span>Style</span><br>This Season</div>
+                                    <div class="s2-hero-sub">Curated luxury pieces crafted for the modern connoisseur.
+                                    </div>
+                                    <div class="s2-hero-cta">Shop Now →</div>
+                                </div>
+                                <div class="s2-hero-img">👗</div>
+                            </div>
+                            <div class="s2-products">
+                                <div class="s2-product">
+                                    <div class="s2-product-img"
+                                        style="background:linear-gradient(135deg,#1a0820,#2d1060)">👜</div>
+                                    <div class="s2-product-info">
+                                        <div class="s2-product-name">Silk Bag</div>
+                                        <div class="s2-product-price">$249</div>
+                                    </div>
+                                </div>
+                                <div class="s2-product">
+                                    <div class="s2-product-img"
+                                        style="background:linear-gradient(135deg,#0a1628,#162040)">⌚</div>
+                                    <div class="s2-product-info">
+                                        <div class="s2-product-name">Gold Watch</div>
+                                        <div class="s2-product-price">$899</div>
+                                    </div>
+                                </div>
+                                <div class="s2-product">
+                                    <div class="s2-product-img"
+                                        style="background:linear-gradient(135deg,#1a0a10,#2d0a18)">💍</div>
+                                    <div class="s2-product-info">
+                                        <div class="s2-product-name">Diamond</div>
+                                        <div class="s2-product-price">$1,299</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-slide" id="slide2">
+                            <div class="s3-wrap">
+                                <div class="s3-nav">
+                                    <div class="s3-logo">Studio<span>X</span></div>
+                                    <div class="s3-nav-links"><span class="s3-nl">Work</span><span
+                                            class="s3-nl">About</span><span class="s3-nl">Journal</span></div>
+                                    <div class="s3-nav-cta">Hire Us</div>
+                                </div>
+                                <div class="s3-hero">
+                                    <div>
+                                        <div class="s3-eyebrow"><span class="s3-eyebrow-dot"></span>Creative Studio ·
+                                            Berlin</div>
+                                        <div class="s3-h">We Design<br><em>Bold</em> Brands<br>That Last.</div>
+                                        <div class="s3-sub">Award-winning design studio specialising in brand identity
+                                            and digital experiences.</div>
+                                        <div class="s3-actions">
+                                            <div class="s3-btn">View Work</div>
+                                            <div class="s3-btn-ghost">↓ Scroll</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="s3-grid">
+                                    <div class="s3-card">
+                                        <div class="s3-card-img"
+                                            style="background:linear-gradient(135deg,#f71352,#c4112f)">🎨<div
+                                                class="s3-card-label" style="background:rgba(0,0,0,0.4)">Brand Identity
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s3-card">
+                                        <div class="s3-card-img"
+                                            style="background:linear-gradient(135deg,#6e34de,#4a22a0)">📐<div
+                                                class="s3-card-label" style="background:rgba(0,0,0,0.4)">UI Systems
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s3-card">
+                                        <div class="s3-card-img"
+                                            style="background:linear-gradient(135deg,#0d0d12,#1a1a2e)">🌐<div
+                                                class="s3-card-label" style="background:rgba(0,0,0,0.4)">Web Design
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="s3-card">
+                                        <div class="s3-card-img"
+                                            style="background:linear-gradient(135deg,#1a0820,#3d1060)">✦<div
+                                                class="s3-card-label" style="background:rgba(0,0,0,0.4)">Motion</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-slide" id="slide3">
+                            <div class="s4-wrap">
+                                <div class="s4-top">
+                                    <div class="s4-brand">
+                                        <div class="s4-brand-icon">M</div>
+                                        <div class="s4-brand-name">MetricsHQ</div>
+                                    </div>
+                                    <div class="s4-status">
+                                        <div class="s4-status-dot"></div>Live Data
+                                    </div>
+                                    <div class="s4-filters">
+                                        <div class="s4-filter active">7D</div>
+                                        <div class="s4-filter">30D</div>
+                                        <div class="s4-filter">90D</div>
+                                    </div>
+                                </div>
+                                <div class="s4-metrics">
+                                    <div class="s4-metric">
+                                        <div class="s4-metric-val">$82<span class="acc">K</span></div>
+                                        <div class="s4-metric-lbl">MRR</div>
+                                        <div class="s4-metric-delta s4-delta-up">↑ 22.4%</div>
+                                    </div>
+                                    <div class="s4-metric">
+                                        <div class="s4-metric-val">14<span class="acc2">K</span></div>
+                                        <div class="s4-metric-lbl">Users</div>
+                                        <div class="s4-metric-delta s4-delta-up">↑ 8.1%</div>
+                                    </div>
+                                    <div class="s4-metric">
+                                        <div class="s4-metric-val">3<span class="acc">.</span>2%</div>
+                                        <div class="s4-metric-lbl">Churn</div>
+                                        <div class="s4-metric-delta s4-delta-down">↓ 0.4%</div>
+                                    </div>
+                                    <div class="s4-metric">
+                                        <div class="s4-metric-val">68<span class="acc2">%</span></div>
+                                        <div class="s4-metric-lbl">Retention</div>
+                                        <div class="s4-metric-delta s4-delta-up">↑ 5.2%</div>
+                                    </div>
+                                </div>
+                                <div class="s4-body">
+                                    <div class="s4-chart-area">
+                                        <div class="s4-chart-lbl">Revenue Growth <span class="s4-chart-sub">— Last 7
+                                                days</span></div>
+                                        <div class="s4-line-chart">
+                                            <svg viewBox="0 0 240 70" preserveAspectRatio="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+                                                        <stop offset="0%" stop-color="#f71352" stop-opacity="0.2" />
+                                                        <stop offset="100%" stop-color="#f71352" stop-opacity="0" />
+                                                    </linearGradient>
+                                                    <linearGradient id="lineGrad2" x1="0" y1="0" x2="0" y2="1">
+                                                        <stop offset="0%" stop-color="#6e34de" stop-opacity="0.15" />
+                                                        <stop offset="100%" stop-color="#6e34de" stop-opacity="0" />
+                                                    </linearGradient>
+                                                </defs>
+                                                <path
+                                                    d="M0,55 C20,50 40,40 60,38 C80,36 100,42 120,30 C140,18 160,22 180,15 C200,8 220,12 240,5"
+                                                    fill="none" stroke="#f71352" stroke-width="1.5" />
+                                                <path
+                                                    d="M0,55 C20,50 40,40 60,38 C80,36 100,42 120,30 C140,18 160,22 180,15 C200,8 220,12 240,5 L240,70 L0,70 Z"
+                                                    fill="url(#lineGrad)" />
+                                                <path
+                                                    d="M0,62 C20,58 40,52 60,50 C80,48 100,54 120,45 C140,36 160,40 180,32 C200,24 220,28 240,20"
+                                                    fill="none" stroke="#6e34de" stroke-width="1"
+                                                    stroke-dasharray="3 3" />
+                                                <path
+                                                    d="M0,62 C20,58 40,52 60,50 C80,48 100,54 120,45 C140,36 160,40 180,32 C200,24 220,28 240,20 L240,70 L0,70 Z"
+                                                    fill="url(#lineGrad2)" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="s4-side">
+                                        <div class="s4-side-card">
+                                            <div class="s4-side-label">Traffic</div>
+                                            <div class="s4-donut-wrap">
+                                                <svg class="s4-donut" viewBox="0 0 36 36">
+                                                    <circle cx="18" cy="18" r="14" fill="none"
+                                                        stroke="var(--mock-border)" stroke-width="4" />
+                                                    <circle cx="18" cy="18" r="14" fill="none" stroke="#f71352"
+                                                        stroke-width="4" stroke-dasharray="53 35" stroke-dashoffset="9"
+                                                        stroke-linecap="round" />
+                                                    <circle cx="18" cy="18" r="14" fill="none" stroke="#6e34de"
+                                                        stroke-width="4" stroke-dasharray="22 66"
+                                                        stroke-dashoffset="-44" stroke-linecap="round" />
+                                                </svg>
+                                                <div class="s4-donut-legend">
+                                                    <div class="s4-legend-item">
+                                                        <div class="s4-legend-dot" style="background:#f71352"></div>
+                                                        Organic
+                                                    </div>
+                                                    <div class="s4-legend-item">
+                                                        <div class="s4-legend-dot" style="background:#6e34de"></div>Paid
+                                                    </div>
+                                                    <div class="s4-legend-item">
+                                                        <div class="s4-legend-dot"
+                                                            style="background:var(--mock-border)"></div>Direct
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="s4-side-card">
+                                            <div class="s4-side-label">Conversion</div>
+                                            <div
+                                                style="font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:900;color:var(--mock-text);letter-spacing:-0.02em">
+                                                4.8<span style="color:var(--accent);font-size:0.7rem">%</span></div>
+                                            <div style="font-size:0.48rem;color:#28c840;font-weight:700;margin-top:2px">
+                                                ↑ Best ever</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="float-card fc-perf">
+                <div class="fc-p-label">Lighthouse Score</div>
+                <div class="perf-row"><span class="perf-name">Performance</span>
+                    <div class="perf-bar-wrap">
+                        <div class="perf-bar-fill"
+                            style="--w:97%;background:linear-gradient(90deg,#28c840,#5de873);animation-delay:0.4s">
+                        </div>
+                    </div><span class="perf-score">97</span>
+                </div>
+                <div class="perf-row"><span class="perf-name">Accessibility</span>
+                    <div class="perf-bar-wrap">
+                        <div class="perf-bar-fill"
+                            style="--w:100%;background:linear-gradient(90deg,#4d9de0,#7bb8f0);animation-delay:0.6s">
+                        </div>
+                    </div><span class="perf-score">100</span>
+                </div>
+                <div class="perf-row"><span class="perf-name">Best Practice</span>
+                    <div class="perf-bar-wrap">
+                        <div class="perf-bar-fill"
+                            style="--w:95%;background:linear-gradient(90deg,#f71352,#ff6b8a);animation-delay:0.8s">
+                        </div>
+                    </div><span class="perf-score">95</span>
+                </div>
+                <div class="perf-row" style="margin-bottom:0"><span class="perf-name">SEO</span>
+                    <div class="perf-bar-wrap">
+                        <div class="perf-bar-fill"
+                            style="--w:100%;background:linear-gradient(90deg,#6e34de,#9b6ef3);animation-delay:1s"></div>
+                    </div><span class="perf-score">100</span>
+                </div>
+            </div>
+
+            <div class="float-card fc-notify" id="fcNotify">
+                <div class="fc-n-row">
+                    <div class="fc-n-icon">🚀</div>
+                    <div>
+                        <div class="fc-n-title">New Project Launched!</div>
+                        <div class="fc-n-sub">Acme Corp · E-Commerce</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="float-card fc-stack">
+                <div class="fc-s-label">Built With</div>
+                <div class="tech-pills" id="techPills">
+                    <span class="tech-pill tp-active">React</span>
+                    <span class="tech-pill">Next.js</span>
+                    <span class="tech-pill">Node</span>
+                    <span class="tech-pill">Figma</span>
+                    <span class="tech-pill">AWS</span>
+                    <span class="tech-pill">TypeScript</span>
+                    <span class="tech-pill">Tailwind</span>
+                </div>
+            </div>
+
+            <div class="orbit-cursor" id="orbitCursor">
+                <div class="orbit-cursor-inner"></div>
+                <div class="orbit-cursor-label">Hovering</div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+            <span class="marquee-item">Software Development <span class="marquee-dot"></span></span>
+            <span class="marquee-item">Brand Identity <span class="marquee-dot"></span></span>
+            <span class="marquee-item">UI / UX Design <span class="marquee-dot"></span></span>
+            <span class="marquee-item">E-Commerce <span class="marquee-dot"></span></span>
+            <span class="marquee-item">Mobile Apps <span class="marquee-dot"></span></span>
+            <span class="marquee-item">SEO Strategy <span class="marquee-dot"></span></span>
+            <span class="marquee-item">Digital Marketing <span class="marquee-dot"></span></span>
+            <span class="marquee-item">Web Design <span class="marquee-dot"></span></span>
+            <span class="marquee-item">Software Development <span class="marquee-dot"></span></span>
+            <span class="marquee-item">Brand Identity <span class="marquee-dot"></span></span>
+            <span class="marquee-item">UI / UX Design <span class="marquee-dot"></span></span>
+            <span class="marquee-item">E-Commerce <span class="marquee-dot"></span></span>
+            <span class="marquee-item">Mobile Apps <span class="marquee-dot"></span></span>
+            <span class="marquee-item">SEO Strategy <span class="marquee-dot"></span></span>
+            <span class="marquee-item">Digital Marketing <span class="marquee-dot"></span></span>
+        </div>
+    </div>
+
+    <!-- ABOUT / OUR STORY -->
+    <section class="about" id="about">
+
+        <!-- Premium faded background elements -->
+        <div class="about-bg-elements" aria-hidden="true">
+            <!-- Large faded text watermarks -->
+            <div class="about-bg-word about-bg-word-1">STORY</div>
+            <div class="about-bg-word about-bg-word-2">CRAFT</div>
+            <div class="about-bg-word about-bg-word-3">2018</div>
+
+            <!-- Animated grid overlay -->
+            <div class="about-grid-lines"></div>
+            <div class="about-scan-line"></div>
+
+            <!-- Geometric floating shapes -->
+            <div class="about-geo about-geo-1"></div>
+            <div class="about-geo about-geo-2"></div>
+            <div class="about-geo about-geo-3"></div>
+            <div class="about-geo about-geo-4"></div>
+
+            <!-- Dot clusters -->
+            <div class="about-dots-cluster about-dots-1"></div>
+            <div class="about-dots-cluster about-dots-2"></div>
+
+            <!-- Diagonal accent lines -->
+            <div class="about-diag-line about-diag-1"></div>
+            <div class="about-diag-line about-diag-2"></div>
+
+            <!-- Corner bracket marks -->
+            <div class="about-corner-bracket acb-tl"></div>
+            <div class="about-corner-bracket acb-tr"></div>
+            <div class="about-corner-bracket acb-bl"></div>
+            <div class="about-corner-bracket acb-br"></div>
+
+            <!-- Pulsing rings -->
+            <div class="about-pulse-ring apr-1"></div>
+            <div class="about-pulse-ring apr-2"></div>
+
+            <!-- Floating metric badges -->
+            <div class="about-float-badge afb-1">
+                <span class="afb-val">7 yrs</span>
+                <span class="afb-lbl">Excellence</span>
+            </div>
+            <div class="about-float-badge afb-2">
+                <span class="afb-val">120+</span>
+                <span class="afb-lbl">Projects</span>
+            </div>
+            <div class="about-float-badge afb-3">
+                <span class="afb-val">98%</span>
+                <span class="afb-lbl">Happy Clients</span>
+            </div>
+
+            <!-- Circuit-style lines -->
+            <div class="about-circuit" aria-hidden="true">
+                <div class="circuit-node cn-1"></div>
+                <div class="circuit-node cn-2"></div>
+                <div class="circuit-node cn-3"></div>
+                <div class="circuit-line cl-1"></div>
+                <div class="circuit-line cl-2"></div>
+            </div>
+
+            <!-- Floating emoji icons -->
+            <div class="about-float-icon afi-1">⌨️</div>
+            <div class="about-float-icon afi-2">🖥️</div>
+            <div class="about-float-icon afi-3">⚡</div>
+            <div class="about-float-icon afi-4">🎨</div>
+            <div class="about-float-icon afi-5">📱</div>
+        </div>
+
+        <div class="corner-mark" style="top:3rem;left:4%;"></div>
+        <div class="corner-mark br" style="bottom:3rem;right:4%;"></div>
+
+        <div style="position:relative;z-index:2">
+            <div class="section-label reveal">Our Story</div>
+            <h2 class="about-headline reveal reveal-delay-1">We Are <span class="italic">Not</span><br>Your
+                Average<br><span class="accent">Agency.</span></h2>
+            <p class="about-text reveal reveal-delay-2">GDS Creatives was founded on a single belief — that great
+                digital experiences are the product of disciplined craft, not just tools and templates.</p>
+            <p class="about-text reveal reveal-delay-3">We partner with ambitious founders, established brands, and
+                forward-thinking teams to build digital products that are as strategically sound as they are beautifully
+                designed.</p>
+            <p class="about-signature reveal reveal-delay-4">— The GDS Team</p>
+
+            <!-- Stats with animated counters -->
+            <div class="about-stats reveal reveal-delay-5">
+                <div class="about-stat-item">
+                    <div class="about-stat-num" data-target="120" data-suffix="+">0+</div>
+                    <div class="about-stat-label">Projects Delivered</div>
+                    <div class="about-stat-bar">
+                        <div class="about-stat-bar-fill" style="--w:85%"></div>
+                    </div>
+                </div>
+                <div class="about-stat-item">
+                    <div class="about-stat-num" data-target="98" data-suffix="%">0%</div>
+                    <div class="about-stat-label">Client Satisfaction</div>
+                    <div class="about-stat-bar">
+                        <div class="about-stat-bar-fill" style="--w:98%"></div>
+                    </div>
+                </div>
+                <div class="about-stat-item">
+                    <div class="about-stat-num" data-target="7" data-suffix=" yrs">0 yrs</div>
+                    <div class="about-stat-label">Years of Excellence</div>
+                    <div class="about-stat-bar">
+                        <div class="about-stat-bar-fill" style="--w:70%"></div>
+                    </div>
+                </div>
+                <div class="about-stat-item">
+                    <div class="about-stat-num" data-target="40" data-suffix="+">0+</div>
+                    <div class="about-stat-label">Global Clients</div>
+                    <div class="about-stat-bar">
+                        <div class="about-stat-bar-fill" style="--w:60%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-right reveal reveal-delay-2">
+            <div class="about-card">
+                <div class="about-card-number">01</div>
+                <div class="about-card-title">Design-First Philosophy</div>
+                <div class="about-card-text">Every decision — from architecture to animation — starts with how the end
+                    user will feel.</div>
+            </div>
+            <div class="about-card">
+                <div class="about-card-number">02</div>
+                <div class="about-card-title">Code That Performs</div>
+                <div class="about-card-text">Clean, scalable, production-ready code. Nothing overengineered. Nothing
+                    underbuilt.</div>
+            </div>
+            <div class="about-card">
+                <div class="about-card-number">03</div>
+                <div class="about-card-title">Results You Can Measure</div>
+                <div class="about-card-text">Our work converts, retains, and grows your business over time. Beauty with
+                    purpose.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="services-blob"></div>
+        <div class="services-line-deco"></div>
+        <div class="services-header">
+            <div>
+                <div class="section-label reveal">What We Do</div>
+                <h2 class="services-headline reveal reveal-delay-1">Our<br><span class="italic">Core</span><br><span
+                        class="accent">Capabilities</span></h2>
+            </div>
+            <p class="services-intro reveal reveal-delay-2">We don't offer a menu of features. We offer genuine
+                expertise across the disciplines that matter most for digital growth — delivered with intention, not
+                assembly-line efficiency.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-item reveal" data-num="01">
+                <div class="service-icon">🌐</div>
+                <div class="service-num">01 —</div>
+                <div class="service-title">Web Design &amp; Development</div>
+                <div class="service-desc">Custom websites built for speed, clarity, and conversion. From landing pages
+                    to complex web applications.</div>
+                <div class="service-tags"><span class="service-tag">React</span><span
+                        class="service-tag">Next.js</span><span class="service-tag">Webflow</span><span
+                        class="service-tag">CMS</span></div>
+            </div>
+            <div class="service-item reveal reveal-delay-1" data-num="02">
+                <div class="service-icon">⚙️</div>
+                <div class="service-num">02 —</div>
+                <div class="service-title">Software Engineering</div>
+                <div class="service-desc">Scalable backend systems, APIs, and full-stack applications. Built to handle
+                    growth.</div>
+                <div class="service-tags"><span class="service-tag">Node.js</span><span
+                        class="service-tag">Python</span><span class="service-tag">PostgreSQL</span><span
+                        class="service-tag">AWS</span></div>
+            </div>
+            <div class="service-item reveal reveal-delay-2" data-num="03">
+                <div class="service-icon">✦</div>
+                <div class="service-num">03 —</div>
+                <div class="service-title">UI / UX Design</div>
+                <div class="service-desc">Research-driven design systems that reduce friction, increase confidence, and
+                    delight at every interaction.</div>
+                <div class="service-tags"><span class="service-tag">Figma</span><span
+                        class="service-tag">Prototyping</span><span class="service-tag">Design Systems</span></div>
+            </div>
+            <div class="service-item reveal" data-num="04">
+                <div class="service-icon">◈</div>
+                <div class="service-num">04 —</div>
+                <div class="service-title">Brand Identity</div>
+                <div class="service-desc">Logos, visual languages, and brand systems that feel distinctive across every
+                    touchpoint.</div>
+                <div class="service-tags"><span class="service-tag">Logo Design</span><span
+                        class="service-tag">Typography</span><span class="service-tag">Brand Guide</span></div>
+            </div>
+            <div class="service-item reveal reveal-delay-1" data-num="05">
+                <div class="service-icon">📱</div>
+                <div class="service-num">05 —</div>
+                <div class="service-title">Mobile Applications</div>
+                <div class="service-desc">Native-feel mobile apps for iOS and Android. Maximum reach, minimum
+                    compromise.</div>
+                <div class="service-tags"><span class="service-tag">React Native</span><span
+                        class="service-tag">iOS</span><span class="service-tag">Android</span></div>
+            </div>
+            <div class="service-item reveal reveal-delay-2" data-num="06">
+                <div class="service-icon">📈</div>
+                <div class="service-num">06 —</div>
+                <div class="service-title">Growth &amp; Strategy</div>
+                <div class="service-desc">SEO architecture, performance optimization, and analytics that show what's
+                    working.</div>
+                <div class="service-tags"><span class="service-tag">SEO</span><span
+                        class="service-tag">Analytics</span><span class="service-tag">CRO</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY GDS -->
+    <section class="why" id="why">
+        <!-- Watermark -->
+        <div class="why-watermark" aria-hidden="true">WHY</div>
+
+        <!-- Animated background layer -->
+        <div class="why-bg-elements" aria-hidden="true">
+            <!-- Particle canvas -->
+            <canvas class="why-particle-canvas" id="whyCanvas"></canvas>
+
+            <!-- Animated grid mesh -->
+            <div class="why-grid-bg"></div>
+
+            <!-- Energy rings - animated automatically -->
+            <div class="why-energy-ring why-ring-1"></div>
+            <div class="why-energy-ring why-ring-2"></div>
+            <div class="why-energy-ring why-ring-3"></div>
+            <div class="why-energy-ring why-ring-4"></div>
+
+            <!-- Glowing orbs -->
+            <div class="why-orb why-orb-1"></div>
+            <div class="why-orb why-orb-2"></div>
+            <div class="why-orb why-orb-3"></div>
+
+            <!-- Diagonal streaks -->
+            <div class="why-streak why-streak-1"></div>
+            <div class="why-streak why-streak-2"></div>
+            <div class="why-streak why-streak-3"></div>
+
+            <!-- Corner accents -->
+            <div class="why-corner-accent wca-tl"></div>
+            <div class="why-corner-accent wca-tr"></div>
+            <div class="why-corner-accent wca-bl"></div>
+            <div class="why-corner-accent wca-br"></div>
+
+            <!-- Floating numbers -->
+            <div class="why-float-num wfn-1">01</div>
+            <div class="why-float-num wfn-2">04</div>
+            <div class="why-float-num wfn-3">06</div>
+        </div>
+
+        <div class="why-top-line"></div>
+        <div class="why-bottom-line"></div>
+
+        <div class="why-header">
+            <div class="section-label reveal">Why GDS</div>
+            <h2 class="why-headline reveal reveal-delay-1">We Believe in<br><span class="accent">Better.</span><br><span
+                    class="italic">Always.</span></h2>
+        </div>
+
+        <div class="why-grid">
+            <!-- Card 01 -->
+            <div class="why-item reveal">
+                <div class="why-item-inner">
+                    <div class="why-item-glow"></div>
+                    <div class="why-item-number">01</div>
+                    <div class="why-item-icon">⚡</div>
+                    <div class="why-item-title">Speed Without Sacrifice</div>
+                    <div class="why-item-text">We move fast — but never at the cost of quality. Our processes are
+                        refined so you get both velocity and precision.</div>
+                    <div class="why-item-bar">
+                        <div class="why-item-bar-fill" style="--w:92%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 02 -->
+            <div class="why-item reveal reveal-delay-1">
+                <div class="why-item-inner">
+                    <div class="why-item-glow"></div>
+                    <div class="why-item-number">02</div>
+                    <div class="why-item-icon">🔍</div>
+                    <div class="why-item-title">Transparency at Every Stage</div>
+                    <div class="why-item-text">No black boxes. No surprises. You see the work as it evolves, with clear
+                        communication and honest timelines.</div>
+                    <div class="why-item-bar">
+                        <div class="why-item-bar-fill" style="--w:100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 03 -->
+            <div class="why-item reveal reveal-delay-2">
+                <div class="why-item-inner">
+                    <div class="why-item-glow"></div>
+                    <div class="why-item-number">03</div>
+                    <div class="why-item-icon">🏆</div>
+                    <div class="why-item-title">Senior-Level Execution</div>
+                    <div class="why-item-text">Your project is handled by senior designers and engineers — not passed to
+                        juniors. Our best minds on every engagement.</div>
+                    <div class="why-item-bar">
+                        <div class="why-item-bar-fill" style="--w:88%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 04 -->
+            <div class="why-item reveal reveal-delay-3">
+                <div class="why-item-inner">
+                    <div class="why-item-glow"></div>
+                    <div class="why-item-number">04</div>
+                    <div class="why-item-icon">🤝</div>
+                    <div class="why-item-title">Long-Term Partnership</div>
+                    <div class="why-item-text">We build relationships, not just deliverables. Many clients have been
+                        with us for years — we're invested in their success.</div>
+                    <div class="why-item-bar">
+                        <div class="why-item-bar-fill" style="--w:95%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 05 -->
+            <div class="why-item reveal">
+                <div class="why-item-inner">
+                    <div class="why-item-glow"></div>
+                    <div class="why-item-number">05</div>
+                    <div class="why-item-icon">📊</div>
+                    <div class="why-item-title">Results-Oriented Culture</div>
+                    <div class="why-item-text">Aesthetics matter deeply — but they always serve a purpose. Every design
+                        decision is grounded in business outcomes.</div>
+                    <div class="why-item-bar">
+                        <div class="why-item-bar-fill" style="--w:97%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 06 -->
+            <div class="why-item reveal reveal-delay-1">
+                <div class="why-item-inner">
+                    <div class="why-item-glow"></div>
+                    <div class="why-item-number">06</div>
+                    <div class="why-item-icon">🛡️</div>
+                    <div class="why-item-title">Post-Launch Support</div>
+                    <div class="why-item-text">We don't disappear after delivery. Ongoing support, iteration, and growth
+                        planning are part of every engagement.</div>
+                    <div class="why-item-bar">
+                        <div class="why-item-bar-fill" style="--w:100%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESS — PREMIUM REDESIGN -->
+    <section class="process" id="process">
+        <!-- Rich background layer -->
+        <div class="process-bg" aria-hidden="true">
+            <canvas id="processCanvas"></canvas>
+            <div class="process-bg-grid"></div>
+            <div class="process-bg-glow process-glow-1"></div>
+            <div class="process-bg-glow process-glow-2"></div>
+            <div class="process-bg-glow process-glow-3"></div>
+            <!-- Animated energy streaks -->
+            <div class="process-streak ps-streak-1"></div>
+            <div class="process-streak ps-streak-2"></div>
+            <div class="process-streak ps-streak-3"></div>
+            <!-- Corner decorations -->
+            <div class="process-corner pc-tl"></div>
+            <div class="process-corner pc-br"></div>
+        </div>
+
+        <div class="process-header">
+            <div>
+                <div class="section-label reveal">How We Work</div>
+                <h2 class="process-headline reveal reveal-delay-1">A <span class="accent">Refined</span><br>Journey
+                    from<br>Idea to Launch</h2>
+            </div>
+            <p class="process-intro reveal reveal-delay-2">Our process is collaborative and iterative — designed to
+                reduce ambiguity, accelerate decisions, and consistently produce work that exceeds expectations.</p>
+        </div>
+
+        <!-- Master progress track -->
+        <div class="process-master-track reveal">
+            <div class="pmt-label-start">Kickoff</div>
+            <div class="pmt-bar-outer">
+                <div class="pmt-bar-fill" id="pmtBar">
+                    <div class="pmt-bar-glow"></div>
+                    <div class="pmt-bar-particles">
+                        <div class="pmt-particle"></div>
+                        <div class="pmt-particle"></div>
+                        <div class="pmt-particle"></div>
+                    </div>
+                </div>
+                <div class="pmt-milestones">
+                    <div class="pmt-milestone" style="left:0%">
+                        <div class="pmt-ms-dot pmt-ms-active"></div>
+                        <div class="pmt-ms-label">Discovery</div>
+                    </div>
+                    <div class="pmt-milestone" style="left:25%">
+                        <div class="pmt-ms-dot"></div>
+                        <div class="pmt-ms-label">Strategy</div>
+                    </div>
+                    <div class="pmt-milestone" style="left:50%">
+                        <div class="pmt-ms-dot"></div>
+                        <div class="pmt-ms-label">Design</div>
+                    </div>
+                    <div class="pmt-milestone" style="left:75%">
+                        <div class="pmt-ms-dot"></div>
+                        <div class="pmt-ms-label">Build</div>
+                    </div>
+                    <div class="pmt-milestone" style="left:100%">
+                        <div class="pmt-ms-dot pmt-ms-launch"></div>
+                        <div class="pmt-ms-label">Launch 🚀</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pmt-label-end">Launch</div>
+        </div>
+
+        <!-- Premium Steps Grid -->
+        <div class="process-steps-premium reveal">
+
+            <!-- Step 01 — Discovery -->
+            <div class="psp-step" data-step="0">
+                <!-- Energy field emanating from card -->
+                <div class="psp-energy-wrap">
+                    <div class="psp-energy-ring per-1"></div>
+                    <div class="psp-energy-ring per-2"></div>
+                    <div class="psp-energy-ring per-3"></div>
+                </div>
+                <!-- Step number node -->
+                <div class="psp-node-wrap">
+                    <div class="psp-node">
+                        <div class="psp-node-pulse"></div>
+                        <div class="psp-node-inner">01</div>
+                    </div>
+                    <div class="psp-connector-line"></div>
+                </div>
+                <!-- Card -->
+                <div class="psp-card">
+                    <div class="psp-card-shine"></div>
+                    <div class="psp-card-border-glow"></div>
+                    <div class="psp-card-content">
+                        <div class="psp-card-top">
+                            <div class="psp-icon-orb">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <path d="m21 21-4.35-4.35" />
+                                </svg>
+                            </div>
+                            <div class="psp-phase-tag">Phase 01</div>
+                            <div class="psp-duration-badge">Week 1</div>
+                        </div>
+                        <h3 class="psp-title">Discovery</h3>
+                        <p class="psp-desc">Deep-dive into your goals, audience, and competitive landscape. Hard
+                            questions upfront so nothing slips later.</p>
+
+                        <!-- Mini progress bar -->
+                        <div class="psp-mini-progress">
+                            <div class="psp-mini-label">
+                                <span>Completion</span><span class="psp-mini-pct">100%</span>
+                            </div>
+                            <div class="psp-mini-bar">
+                                <div class="psp-mini-fill" style="--target:100%">
+                                    <div class="psp-mini-shimmer"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Deliverables list -->
+                        <ul class="psp-deliverables">
+                            <li><span class="psp-check">✓</span>Goals Workshop</li>
+                            <li><span class="psp-check">✓</span>Competitor Audit</li>
+                            <li><span class="psp-check">✓</span>User Research</li>
+                        </ul>
+
+                        <!-- Tags -->
+                        <div class="psp-tags">
+                            <span class="psp-tag">Research</span>
+                            <span class="psp-tag">Strategy</span>
+                            <span class="psp-tag">Goals</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 02 — Strategy -->
+            <div class="psp-step" data-step="1">
+                <div class="psp-energy-wrap">
+                    <div class="psp-energy-ring per-1"></div>
+                    <div class="psp-energy-ring per-2"></div>
+                    <div class="psp-energy-ring per-3"></div>
+                </div>
+                <div class="psp-node-wrap">
+                    <div class="psp-node">
+                        <div class="psp-node-pulse"></div>
+                        <div class="psp-node-inner">02</div>
+                    </div>
+                    <div class="psp-connector-line"></div>
+                </div>
+                <div class="psp-card">
+                    <div class="psp-card-shine"></div>
+                    <div class="psp-card-border-glow"></div>
+                    <div class="psp-card-content">
+                        <div class="psp-card-top">
+                            <div class="psp-icon-orb">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round">
+                                    <path
+                                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7M9 20l6-3M9 20V7m6 13l5.447-2.724A1 1 0 0021 16.382V5.618a1 1 0 00-1.447-.894L15 7m0 13V7M9 7l6-3" />
+                                </svg>
+                            </div>
+                            <div class="psp-phase-tag">Phase 02</div>
+                            <div class="psp-duration-badge">Week 2</div>
+                        </div>
+                        <h3 class="psp-title">Strategy</h3>
+                        <p class="psp-desc">Translate insights into a clear plan — architecture, technology choices, and
+                            a roadmap built for success.</p>
+                        <div class="psp-mini-progress">
+                            <div class="psp-mini-label">
+                                <span>Completion</span><span class="psp-mini-pct">100%</span>
+                            </div>
+                            <div class="psp-mini-bar">
+                                <div class="psp-mini-fill" style="--target:100%">
+                                    <div class="psp-mini-shimmer"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="psp-deliverables">
+                            <li><span class="psp-check">✓</span>Tech Architecture</li>
+                            <li><span class="psp-check">✓</span>Project Roadmap</li>
+                            <li><span class="psp-check">✓</span>Stack Decision</li>
+                        </ul>
+                        <div class="psp-tags">
+                            <span class="psp-tag">Architecture</span>
+                            <span class="psp-tag">Tech Stack</span>
+                            <!-- <span class="psp-tag">Roadmap</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 03 — Design -->
+            <div class="psp-step" data-step="2">
+                <div class="psp-energy-wrap">
+                    <div class="psp-energy-ring per-1"></div>
+                    <div class="psp-energy-ring per-2"></div>
+                    <div class="psp-energy-ring per-3"></div>
+                </div>
+                <div class="psp-node-wrap">
+                    <div class="psp-node">
+                        <div class="psp-node-pulse"></div>
+                        <div class="psp-node-inner">03</div>
+                    </div>
+                    <div class="psp-connector-line"></div>
+                </div>
+                <div class="psp-card">
+                    <div class="psp-card-shine"></div>
+                    <div class="psp-card-border-glow"></div>
+                    <div class="psp-card-content">
+                        <div class="psp-card-top">
+                            <div class="psp-icon-orb">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round">
+                                    <path d="M12 20h9" />
+                                    <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+                                </svg>
+                            </div>
+                            <div class="psp-phase-tag">Phase 03</div>
+                            <div class="psp-duration-badge">Wk 3–4</div>
+                        </div>
+                        <h3 class="psp-title">Design</h3>
+                        <p class="psp-desc">Visual concepts, interactive prototypes, and refined design systems before a
+                            single line of code is written.</p>
+                        <div class="psp-mini-progress">
+                            <div class="psp-mini-label">
+                                <span>Completion</span><span class="psp-mini-pct">100%</span>
+                            </div>
+                            <div class="psp-mini-bar">
+                                <div class="psp-mini-fill" style="--target:100%">
+                                    <div class="psp-mini-shimmer"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="psp-deliverables">
+                            <li><span class="psp-check">✓</span>Wireframes &amp; Flows</li>
+                            <li><span class="psp-check">✓</span>Visual Prototypes</li>
+                            <li><span class="psp-check">✓</span>Design System</li>
+                        </ul>
+                        <div class="psp-tags">
+                            <span class="psp-tag">Figma</span>
+                            <span class="psp-tag">Prototype</span>
+                            <span class="psp-tag">Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 04 — Build -->
+            <div class="psp-step" data-step="3">
+                <div class="psp-energy-wrap">
+                    <div class="psp-energy-ring per-1"></div>
+                    <div class="psp-energy-ring per-2"></div>
+                    <div class="psp-energy-ring per-3"></div>
+                </div>
+                <div class="psp-node-wrap">
+                    <div class="psp-node">
+                        <div class="psp-node-pulse"></div>
+                        <div class="psp-node-inner">04</div>
+                    </div>
+                    <div class="psp-connector-line"></div>
+                </div>
+                <div class="psp-card">
+                    <div class="psp-card-shine"></div>
+                    <div class="psp-card-border-glow"></div>
+                    <div class="psp-card-content">
+                        <div class="psp-card-top">
+                            <div class="psp-icon-orb">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round">
+                                    <polyline points="16 18 22 12 16 6" />
+                                    <polyline points="8 6 2 12 8 18" />
+                                </svg>
+                            </div>
+                            <div class="psp-phase-tag">Phase 04</div>
+                            <div class="psp-duration-badge">Wk 5–8</div>
+                        </div>
+                        <h3 class="psp-title">Build</h3>
+                        <p class="psp-desc">Clean, performant, well-documented code. Regular check-ins, staging
+                            previews, zero-surprise sprints.</p>
+                        <div class="psp-mini-progress">
+                            <div class="psp-mini-label">
+                                <span>Completion</span><span class="psp-mini-pct">100%</span>
+                            </div>
+                            <div class="psp-mini-bar">
+                                <div class="psp-mini-fill" style="--target:100%">
+                                    <div class="psp-mini-shimmer"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="psp-deliverables">
+                            <li><span class="psp-check">✓</span>Agile Sprints</li>
+                            <li><span class="psp-check">✓</span>Staging Previews</li>
+                            <li><span class="psp-check">✓</span>QA &amp; Testing</li>
+                        </ul>
+                        <div class="psp-tags">
+                            <span class="psp-tag">Agile</span>
+                            <span class="psp-tag">Staging</span>
+                            <span class="psp-tag">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 05 — Launch & Grow -->
+            <div class="psp-step psp-step-final" data-step="4">
+                <div class="psp-energy-wrap">
+                    <div class="psp-energy-ring per-1"></div>
+                    <div class="psp-energy-ring per-2"></div>
+                    <div class="psp-energy-ring per-3"></div>
+                    <div class="psp-energy-ring per-4"></div>
+                </div>
+                <div class="psp-node-wrap">
+                    <div class="psp-node psp-node-launch">
+                        <div class="psp-node-pulse"></div>
+                        <div class="psp-node-inner">🚀</div>
+                    </div>
+                </div>
+                <div class="psp-card psp-card-launch" style="margin-top: 52px;">
+                    <div class="psp-card-shine"></div>
+                    <div class="psp-card-border-glow"></div>
+                    <div class="psp-launch-burst">
+                        <div class="plb-ring plb-ring-1"></div>
+                        <div class="plb-ring plb-ring-2"></div>
+                        <div class="plb-ring plb-ring-3"></div>
+                    </div>
+                    <div class="psp-card-content">
+                        <div class="psp-card-top">
+                            <div class="psp-icon-orb psp-icon-launch">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round">
+                                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                                    <polyline points="22 4 12 14.01 9 11.01" />
+                                </svg>
+                            </div>
+                            <div class="psp-phase-tag psp-phase-launch">Launch 🚀</div>
+                            <div class="psp-duration-badge">Week 9+</div>
+                        </div>
+                        <h3 class="psp-title">Launch &amp; Grow</h3>
+                        <p class="psp-desc">Staged deployment followed by monitoring, analytics review, and a roadmap
+                            for continued growth.</p>
+                        <div class="psp-mini-progress">
+                            <div class="psp-mini-label">
+                                <span>Status</span><span class="psp-mini-pct psp-pct-live">● LIVE</span>
+                            </div>
+                            <div class="psp-mini-bar">
+                                <div class="psp-mini-fill psp-fill-launch" style="--target:100%">
+                                    <div class="psp-mini-shimmer"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="psp-deliverables">
+                            <li><span class="psp-check psp-check-launch">✓</span>Zero-downtime Deploy</li>
+                            <li><span class="psp-check psp-check-launch">✓</span>Analytics Dashboard</li>
+                            <li><span class="psp-check psp-check-launch">✓</span>Ongoing Support</li>
+                        </ul>
+                        <div class="psp-tags">
+                            <span class="psp-tag psp-tag-launch">Deploy</span>
+                            <span class="psp-tag psp-tag-launch">Analytics</span>
+                            <span class="psp-tag psp-tag-launch">Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- /process-steps-premium -->
+    </section>
+
+    <!-- PRICING -->
+    <section class="pricing" id="pricing">
+        <div class="pricing-ring pricing-ring-1"></div>
+        <div class="pricing-ring pricing-ring-2"></div>
+        <div class="pricing-header">
+            <div class="section-label reveal" style="justify-content:center">Investment</div>
+            <h2 class="pricing-headline reveal reveal-delay-1">Transparent<br><span class="accent">Pricing</span></h2>
+            <p class="pricing-sub reveal reveal-delay-2">Simple, honest packages for different stages of growth. No
+                hidden fees, no surprises.</p>
+        </div>
+        <div class="pricing-grid reveal">
+            <div class="pricing-card">
+                <div class="plan-name">Starter</div>
+                <div class="plan-desc">For early-stage businesses that need a strong digital foundation.</div>
+                <div class="plan-price">
+                    <div class="plan-amount"><sup>$</sup>1,499</div>
+                    <div class="plan-period">one-time investment</div>
+                </div>
+                <ul class="plan-features">
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Custom 5-page website</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Mobile-responsive design</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Basic SEO setup</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Contact form integration</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>30-day post-launch support</li>
+                </ul>
+                <button class="plan-cta">Get Started</button>
+            </div>
+            <div class="pricing-card featured">
+                <div class="plan-badge">Most Popular</div>
+                <div class="plan-name">Growth</div>
+                <div class="plan-desc">For scaling businesses that demand a premium digital presence.</div>
+                <div class="plan-price">
+                    <div class="plan-amount"><sup>$</sup>3,999</div>
+                    <div class="plan-period">one-time investment</div>
+                </div>
+                <ul class="plan-features">
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Custom 10-page website</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Full brand integration</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Advanced SEO &amp; analytics</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>CMS integration</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>E-commerce ready</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>90-day post-launch support</li>
+                </ul>
+                <button class="plan-cta">Get Started</button>
+            </div>
+            <div class="pricing-card">
+                <div class="plan-name">Enterprise</div>
+                <div class="plan-desc">For organizations that require bespoke software and end-to-end strategy.</div>
+                <div class="plan-price">
+                    <div class="plan-amount">Custom</div>
+                    <div class="plan-period">tailored to your scope</div>
+                </div>
+                <ul class="plan-features">
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Full-stack development</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Custom software &amp; APIs</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Mobile app development</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Dedicated team &amp; PM</li>
+                    <li><svg class="feat-check" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8l4 4 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>Ongoing retainer options</li>
+                </ul>
+                <button class="plan-cta">Book a Call</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / CONTACT -->
+    <section class="cta-section" id="contact">
+        <div class="cta-orb-1"></div>
+        <div class="cta-orb-2"></div>
+        <div class="cta-inner">
+            <div>
+                <div class="section-label reveal">Get In Touch</div>
+                <h2 class="cta-headline reveal reveal-delay-1">Ready to Build<br>Something<br><span
+                        class="accent">Remarkable?</span></h2>
+                <p class="cta-sub reveal reveal-delay-2">Tell us about your project. We read every message personally
+                    and respond within one business day.</p>
+                <div class="cta-contact reveal reveal-delay-3">
+                    <div class="cta-contact-item"><span class="dot"></span>hello@gdscreatives.com</div>
+                    <div class="cta-contact-item"><span class="dot"></span>+1 (555) 000-0000</div>
+                    <div class="cta-contact-item"><span class="dot"></span>New York · London · Remote</div>
+                </div>
+                <div class="trust-row reveal reveal-delay-4">
+                    <div class="trust-badge"><span class="trust-badge-dot"></span>Response in 24h</div>
+                    <div class="trust-badge"><span class="trust-badge-dot"></span>Free Consultation</div>
+                    <div class="trust-badge"><span class="trust-badge-dot"></span>NDA Available</div>
+                </div>
+            </div>
+            <div class="reveal reveal-delay-2">
+                <div class="contact-form-wrap">
+                    <div class="contact-form-inner">
+                        <form class="contact-form" onsubmit="handleSubmit(event)">
+                            <div class="form-row">
+                                <div class="form-group"><input type="text" class="form-input" placeholder="First Name"
+                                        required /></div>
+                                <div class="form-group"><input type="text" class="form-input" placeholder="Last Name"
+                                        required /></div>
+                            </div>
+                            <div class="form-group"><input type="email" class="form-input" placeholder="Email Address"
+                                    required /></div>
+                            <div class="form-group"><input type="text" class="form-input"
+                                    placeholder="Company / Brand Name" /></div>
+                            <div class="form-group">
+                                <select class="form-select form-input">
+                                    <option value="" disabled selected>Service Interest</option>
+                                    <option>Web Design &amp; Development</option>
+                                    <option>Software Engineering</option>
+                                    <option>UI / UX Design</option>
+                                    <option>Brand Identity</option>
+                                    <option>Mobile Application</option>
+                                    <option>Growth &amp; Strategy</option>
+                                    <option>Full Enterprise Package</option>
+                                </select>
+                            </div>
+                            <div class="form-group"><textarea class="form-textarea"
+                                    placeholder="Tell us about your project, goals, and timeline…" required></textarea>
+                            </div>
+                            <button type="submit" class="form-submit">Send Message →</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">GDS <span>Creatives</span></div>
+                <p class="footer-tagline">Premium web design and software development for brands that demand excellence.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link">Tw</a>
+                    <a href="#" class="social-link">Li</a>
+                    <a href="#" class="social-link">Dr</a>
+                    <a href="#" class="social-link">Ig</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Services</div>
+                <ul class="footer-links">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Software Dev</a></li>
+                    <li><a href="#">UI / UX Design</a></li>
+                    <li><a href="#">Brand Identity</a></li>
+                    <li><a href="#">Mobile Apps</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-col-title">Company</div>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Process</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-col-title">Contact</div>
+                <ul class="footer-links">
+                    <li><a href="#">hello@gdscreatives.com</a></li>
+                    <li><a href="#">+1 (555) 000-0000</a></li>
+                    <li><a href="#">New York Office</a></li>
+                    <li><a href="#">London Office</a></li>
+                    <li><a href="#">Book a Call</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2025 <span>GDS Creatives</span>. Crafted with intention.</p>
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /* ════════════════════════════════════════
+           THEME TOGGLE
+        ════════════════════════════════════════ */
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        const stored = localStorage.getItem('theme');
+        if (stored) html.setAttribute('data-theme', stored);
+        themeToggle.addEventListener('click', () => {
+            const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            initBgCanvas();
+        });
+
+        /* ════════════════════════════════════════
+           BG PARTICLE CANVAS
+        ════════════════════════════════════════ */
+        function initBgCanvas() {
+            const canvas = document.getElementById('bg-canvas');
+            const ctx = canvas.getContext('2d');
+            const isDark = () => html.getAttribute('data-theme') === 'dark';
+            let W, H, pts = [], raf;
+
+            function resize() { W = canvas.width = innerWidth; H = canvas.height = innerHeight; }
+
+            class Dot {
+                constructor() { this.reset(); }
+                reset() {
+                    this.x = Math.random() * W; this.y = Math.random() * H;
+                    this.r = Math.random() * 2.2 + 0.8;
+                    this.vx = (Math.random() - .5) * .2; this.vy = (Math.random() - .5) * .2;
+                    this.o = Math.random() * 0.7 + 0.25;
+                    this.ph = Math.random() * 6.28;
+                    this.t = Math.random();
+                }
+                step() {
+                    this.x += this.vx; this.y += this.vy; this.ph += .016;
+                    if (this.x < 0 || this.x > W || this.y < 0 || this.y > H) this.reset();
+                }
+                draw() {
+                    const p = .75 + .25 * Math.sin(this.ph);
+                    const a = this.o * p;
+                    ctx.fillStyle = this.t < .06 ? `rgba(247,19,82,${a * 1.4})` :
+                        this.t < .11 ? `rgba(110,52,222,${a * 1.4})` :
+                            isDark() ? `rgba(200,200,255,${a * .5})` : `rgba(20,20,30,${a * .4})`;
+                    ctx.beginPath(); ctx.arc(this.x, this.y, this.r * p, 0, 6.28); ctx.fill();
+                }
+            }
+
+            function loop() {
+                ctx.clearRect(0, 0, W, H);
+                pts.forEach(p => { p.step(); p.draw(); });
+                raf = requestAnimationFrame(loop);
+            }
+
+            if (raf) cancelAnimationFrame(raf);
+            resize();
+            const n = Math.min(Math.floor(W * H / 18000), 120);
+            pts = Array.from({ length: n }, () => new Dot());
+            loop();
+
+            window.addEventListener('resize', () => {
+                resize();
+                pts = Array.from({ length: Math.min(Math.floor(W * H / 18000), 120) }, () => new Dot());
+            }, { passive: true });
+        }
+        initBgCanvas();
+
+        /* ════════════════════════════════════════
+           SCROLL REVEAL (IntersectionObserver)
+        ════════════════════════════════════════ */
+        const revealObs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    revealObs.unobserve(e.target);
+                }
+            });
+        }, { threshold: .08, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+        /* ════════════════════════════════════════
+           SMOOTH COUNTER ANIMATION
+        ════════════════════════════════════════ */
+        function animateCounter(el) {
+            const target = parseInt(el.dataset.target);
+            const suffix = el.dataset.suffix || '';
+            const duration = 2200;
+            const startTime = performance.now();
+
+            // Cubic ease-out for smooth deceleration
+            const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+            function update(now) {
+                const elapsed = now - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = easeOutCubic(progress);
+                const value = Math.round(eased * target);
+                el.textContent = value + suffix;
+                if (progress < 1) requestAnimationFrame(update);
+                else el.textContent = target + suffix; // ensure exact final value
+            }
+            requestAnimationFrame(update);
+        }
+
+        // Animate stat bars too
+        function animateStatBar(barEl) {
+            barEl.style.width = '0%';
+            requestAnimationFrame(() => {
+                barEl.style.transition = 'width 1.8s cubic-bezier(0.16, 1, 0.3, 1)';
+                barEl.style.width = getComputedStyle(barEl).getPropertyValue('--w') ||
+                    barEl.style.getPropertyValue('--w') || '0%';
+                // Use CSS variable
+                const w = barEl.parentElement ? window.getComputedStyle(barEl).getPropertyValue('--w') : '0%';
+                barEl.style.width = w;
+            });
+        }
+
+        const counterObs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    const statItem = e.target;
+                    const numEl = statItem.querySelector('.about-stat-num[data-target]');
+                    const barFill = statItem.querySelector('.about-stat-bar-fill');
+
+                    if (numEl) animateCounter(numEl);
+                    if (barFill) {
+                        setTimeout(() => {
+                            barFill.classList.add('bar-animated');
+                        }, 300);
+                    }
+                    counterObs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.4 });
+
+        document.querySelectorAll('.about-stat-item').forEach(el => counterObs.observe(el));
+
+        /* ════════════════════════════════════════
+           SMOOTH SCROLL
+        ════════════════════════════════════════ */
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const t = document.querySelector(a.getAttribute('href'));
+                if (t) {
+                    e.preventDefault();
+                    window.scrollTo({ top: t.getBoundingClientRect().top + pageYOffset - 72, behavior: 'smooth' });
+                }
+            });
+        });
+
+        /* ════════════════════════════════════════
+           HERO ENTRANCE
+        ════════════════════════════════════════ */
+        ['.hero-eyebrow', '.hero-headline', '.hero-sub', '.hero-actions', '.hero-scroll'].forEach((sel, i) => {
+            const el = document.querySelector(sel); if (!el) return;
+            el.style.cssText = `opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.16,1,.3,1) ${i * .12}s,transform .8s cubic-bezier(.16,1,.3,1) ${i * .12}s`;
+            setTimeout(() => { el.style.opacity = '1'; el.style.transform = 'translateY(0)'; }, 60 + i * 120);
+        });
+
+        /* ════════════════════════════════════════
+           SPARKLINE
+        ════════════════════════════════════════ */
+        function updateSparkline() {
+            const line = document.getElementById('sparklineLine'), fill = document.getElementById('sparklineFill');
+            if (!line || !fill) return;
+            const pts = 14, W2 = 140, H2 = 22; let v = 10, data = [];
+            for (let i = 0; i < pts; i++) { v = Math.max(2, Math.min(20, v + (Math.random() - .42) * 5)); data.push(v); }
+            const xs = data.map((_, i) => i / (pts - 1) * W2);
+            const ys = data.map(d => H2 - (d / 22) * H2);
+            const str = xs.map((x, i) => `${x},${ys[i]}`).join(' ');
+            line.setAttribute('points', str);
+            fill.setAttribute('points', `0,${H2} ${str} ${W2},${H2}`);
+        }
+        updateSparkline();
+        setInterval(updateSparkline, 2500);
+
+        /* ════════════════════════════════════════
+           LIVE VISITORS
+        ════════════════════════════════════════ */
+        let visBase = 2481;
+        setInterval(() => {
+            const el = document.getElementById('visitorCount'); if (!el) return;
+            visBase = Math.max(2300, Math.min(2800, visBase + Math.floor((Math.random() - .45) * 12)));
+            const s = visBase.toLocaleString(), parts = s.split(',');
+            el.innerHTML = parts[0] + ',<span>' + (parts[1] || '000') + '</span>';
+        }, 2000);
+
+        /* ════════════════════════════════════════
+           S1 BAR CHART
+        ════════════════════════════════════════ */
+        (function () {
+            const c = document.getElementById('s1Bars'); if (!c) return;
+            const heights = [30, 45, 35, 62, 50, 70, 42, 80, 55, 88, 65, 100];
+            const colorMap = {
+                blue: 'linear-gradient(to top,#4d9de0,#7bb8f0)',
+                purple: 'linear-gradient(to top,#6e34de,#9b6ef3)',
+                green: 'linear-gradient(to top,#28c840,#5de873)',
+                default: 'linear-gradient(to top,#f71352,#ff6b8a)'
+            };
+            const colors = ['blue', '', 'blue', '', 'purple', '', 'blue', '', '', 'green', '', ''];
+            heights.forEach((h, i) => {
+                const bar = document.createElement('div'); bar.className = 's1-bar';
+                const fill = document.createElement('div'); fill.className = 's1-bar-fill';
+                const cl = colors[i] || 'default';
+                fill.style.cssText = `height:${h}%;background:${colorMap[cl]};animation-delay:${.2 + i * .05}s`;
+                bar.appendChild(fill); c.appendChild(bar);
+            });
+        })();
+
+        /* ════════════════════════════════════════
+           BROWSER TAB SWITCHING
+        ════════════════════════════════════════ */
+        const tabUrls = ['app.dataflow.io', 'luxeshop.store', 'studiox.design', 'metricshq.app'];
+        let currentTab = 0, tabTimer;
+        function switchTab(idx, fromUser) {
+            if (idx === currentTab && !fromUser) return;
+            document.querySelectorAll('.browser-tab').forEach((t, i) => t.classList.toggle('active', i === idx));
+            const urlEl = document.getElementById('urlText');
+            if (urlEl) urlEl.textContent = tabUrls[idx];
+            document.querySelectorAll('.tab-slide').forEach((s, i) => s.classList.toggle('active', i === idx));
+            currentTab = idx;
+            if (fromUser) { clearInterval(tabTimer); tabTimer = setInterval(autoNextTab, 4500); }
+        }
+        function autoNextTab() { switchTab((currentTab + 1) % 4, false); }
+        document.querySelectorAll('.browser-tab').forEach((btn, i) => btn.addEventListener('click', () => switchTab(i, true)));
+        tabTimer = setInterval(autoNextTab, 4500);
+
+        /* ════════════════════════════════════════
+           TECH PILL CYCLE
+        ════════════════════════════════════════ */
+        (function () {
+            const pills = document.querySelectorAll('.tech-pill'); if (!pills.length) return;
+            let idx = 0;
+            setInterval(() => {
+                pills.forEach(p => p.classList.remove('tp-active', 'tp-active-2'));
+                idx = (idx + 1) % pills.length;
+                pills[idx].classList.add(idx % 2 === 0 ? 'tp-active' : 'tp-active-2');
+            }, 1300);
+        })();
+
+        /* ════════════════════════════════════════
+           ORBIT CURSOR
+        ════════════════════════════════════════ */
+        (function () {
+            const cursor = document.getElementById('orbitCursor'), visual = document.getElementById('heroVisual');
+            if (!cursor || !visual) return;
+            let t = 0;
+            function run() {
+                t += .007;
+                const r = visual.getBoundingClientRect();
+                cursor.style.left = (r.width / 2 + r.width * .36 * Math.cos(t)) + 'px';
+                cursor.style.top = (r.height / 2 + r.height * .3 * Math.sin(t * .8)) + 'px';
+                requestAnimationFrame(run);
+            } run();
+        })();
+
+        /* ════════════════════════════════════════
+           BROWSER TILT
+        ════════════════════════════════════════ */
+        (function () {
+            const frame = document.getElementById('browserFrame'), visual = document.getElementById('heroVisual');
+            if (!frame || !visual) return;
+            let mx = .5, my = .5, cx = -4, cy = 1.5;
+            document.addEventListener('mousemove', e => {
+                const r = visual.getBoundingClientRect();
+                mx = (e.clientX - r.left) / r.width;
+                my = (e.clientY - r.top) / r.height;
+            }, { passive: true });
+            function run() {
+                cx += ((-4 + (mx - .5) * 6) - cx) * .03;
+                cy += ((1.5 + (my - .5) * 3) - cy) * .03;
+                frame.style.transform = `perspective(1200px) rotateY(${cx}deg) rotateX(${cy}deg)`;
+                requestAnimationFrame(run);
+            } run();
+        })();
+
+        /* ════════════════════════════════════════
+           NOTIFICATION CYCLING
+        ════════════════════════════════════════ */
+        const notifs = [
+            { icon: '🚀', title: 'New Project Launched!', sub: 'Acme Corp · E-Commerce' },
+            { icon: '✅', title: 'Design Approved', sub: 'TechFlow · Dashboard' },
+            { icon: '💬', title: 'New Message', sub: '"Absolutely love it!"' },
+            { icon: '📈', title: 'Traffic Up 48%', sub: 'Nova Brand · Post-Launch' },
+            { icon: '🎯', title: 'Goal Reached', sub: 'Pixel Labs · 10k Users' },
+        ];
+        let ni = 0;
+        setInterval(() => {
+            const card = document.getElementById('fcNotify'); if (!card) return;
+            ni = (ni + 1) % notifs.length; const n = notifs[ni];
+            card.style.opacity = '0'; card.style.transform = 'translateY(-8px)';
+            card.style.transition = 'opacity .3s,transform .3s';
+            setTimeout(() => {
+                card.querySelector('.fc-n-icon').textContent = n.icon;
+                card.querySelector('.fc-n-title').textContent = n.title;
+                card.querySelector('.fc-n-sub').textContent = n.sub;
+                card.style.opacity = '1'; card.style.transform = '';
+            }, 320);
+        }, 3200);
+
+        /* ════════════════════════════════════════
+           FORM SUBMIT
+        ════════════════════════════════════════ */
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('.form-submit');
+            btn.textContent = 'Message Sent ✓';
+            btn.style.background = 'linear-gradient(90deg,#10b981,#059669)';
+            setTimeout(() => { btn.textContent = 'Send Message →'; btn.style.background = ''; e.target.reset(); }, 3000);
+        }
+
+        /* ════════════════════════════════════════
+           WHY SECTION — PARTICLE CANVAS
+        ════════════════════════════════════════ */
+        (function () {
+            const canvas = document.getElementById('whyCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const section = canvas.closest('.why');
+            let W, H, particles = [], animating = false;
+
+            function resize() {
+                W = canvas.width = section.offsetWidth;
+                H = canvas.height = section.offsetHeight;
+            }
+
+            class Particle {
+                constructor() { this.reset(); }
+                reset() {
+                    this.x = Math.random() * W;
+                    this.y = Math.random() * H;
+                    this.size = Math.random() * 2 + 0.4;
+                    this.speedX = (Math.random() - 0.5) * 0.25;
+                    this.speedY = (Math.random() - 0.5) * 0.25;
+                    this.opacity = Math.random() * 0.35 + 0.08;
+                    this.color = Math.random() < 0.5 ? '247,19,82' : '110,52,222';
+                    this.pulse = Math.random() * Math.PI * 2;
+                }
+                update() {
+                    this.x += this.speedX; this.y += this.speedY; this.pulse += 0.018;
+                    if (this.x < 0 || this.x > W || this.y < 0 || this.y > H) this.reset();
+                }
+                draw() {
+                    const a = this.opacity * (0.7 + 0.3 * Math.sin(this.pulse));
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(${this.color},${a})`;
+                    ctx.fill();
+                }
+            }
+
+            resize();
+            particles = Array.from({ length: 55 }, () => new Particle());
+
+            function loop() {
+                ctx.clearRect(0, 0, W, H);
+                // Connections
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < 90) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(247,19,82,${0.035 * (1 - dist / 90)})`;
+                            ctx.lineWidth = 0.5;
+                            ctx.stroke();
+                        }
+                    }
+                    particles[i].update();
+                    particles[i].draw();
+                }
+                requestAnimationFrame(loop);
+            }
+
+            // Start only when section is visible
+            const whyObs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting && !animating) { animating = true; loop(); }
+                });
+            }, { threshold: 0.1 });
+            whyObs.observe(section);
+
+            window.addEventListener('resize', resize, { passive: true });
+        })();
+
+        /* ════════════════════════════════════════
+           WHY ITEMS — ::before BORDER ANIMATION
+           (trigger when item scrolls into view)
+        ════════════════════════════════════════ */
+        (function () {
+            const whyItems = document.querySelectorAll('.why-item');
+            if (!whyItems.length) return;
+
+            const whyItemObs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('why-item-active');
+                        whyItemObs.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            whyItems.forEach(item => whyItemObs.observe(item));
+        })();
+
+        /* ════════════════════════════════════════
+           PROCESS SECTION — CANVAS
+        ════════════════════════════════════════ */
+        (function () {
+            const canvas = document.getElementById('processCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const section = canvas.closest('.process');
+            let W, H, nodes = [];
+
+            function resize() {
+                W = canvas.width = section.offsetWidth;
+                H = canvas.height = section.offsetHeight;
+            }
+
+            class EnergyNode {
+                constructor() { this.reset(); }
+                reset() {
+                    this.x = Math.random() * W; this.y = Math.random() * H;
+                    this.vx = (Math.random() - 0.5) * 0.18; this.vy = (Math.random() - 0.5) * 0.18;
+                    this.r = Math.random() * 1.2 + 0.4;
+                    this.alpha = Math.random() * 0.25 + 0.04;
+                    this.phase = Math.random() * Math.PI * 2;
+                    this.color = Math.random() < 0.6 ? '110,52,222' : '247,19,82';
+                }
+                update() {
+                    this.x += this.vx; this.y += this.vy; this.phase += 0.012;
+                    if (this.x < 0 || this.x > W || this.y < 0 || this.y > H) this.reset();
+                }
+                draw() {
+                    const a = this.alpha * (0.5 + 0.5 * Math.sin(this.phase));
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(${this.color},${a})`;
+                    ctx.fill();
+                }
+            }
+
+            resize();
+            nodes = Array.from({ length: 35 }, () => new EnergyNode());
+
+            function loop() {
+                ctx.clearRect(0, 0, W, H);
+                nodes.forEach(n => { n.update(); n.draw(); });
+                requestAnimationFrame(loop);
+            }
+            loop();
+            window.addEventListener('resize', resize, { passive: true });
+        })();
+
+        /* ════════════════════════════════════════
+           PROCESS MASTER PROGRESS BAR
+        ════════════════════════════════════════ */
+        (function () {
+            const bar = document.getElementById('pmtBar');
+            const section = document.querySelector('.process');
+            if (!bar || !section) return;
+
+            // Animate milestones as bar progresses
+            const milestones = document.querySelectorAll('.pmt-ms-dot');
+            let lastProgress = 0;
+
+            function updateProgress() {
+                const rect = section.getBoundingClientRect();
+                const windowH = window.innerHeight;
+                const progress = Math.max(0, Math.min(1,
+                    (windowH * 0.6 - rect.top) / (rect.height * 0.7)
+                ));
+
+                bar.style.width = (progress * 100) + '%';
+
+                // Activate milestones progressively
+                milestones.forEach((dot, i) => {
+                    const threshold = i / (milestones.length - 1);
+                    if (progress >= threshold) {
+                        dot.classList.add('pmt-ms-active');
+                    }
+                });
+
+                lastProgress = progress;
+            }
+
+            window.addEventListener('scroll', updateProgress, { passive: true });
+            updateProgress();
+        })();
+
+        /* ════════════════════════════════════════
+           PROCESS STEPS — STAGGER ANIMATION
+        ════════════════════════════════════════ */
+        (function () {
+            const steps = document.querySelectorAll('.psp-step');
+            if (!steps.length) return;
+
+            const stepObs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        const idx = parseInt(e.target.dataset.step);
+                        setTimeout(() => {
+                            e.target.classList.add('psp-step-visible');
+                            // Animate mini progress bar inside
+                            const miniBar = e.target.querySelector('.psp-mini-fill');
+                            if (miniBar) {
+                                setTimeout(() => miniBar.classList.add('psp-fill-animated'), 400);
+                            }
+                        }, idx * 180);
+                        stepObs.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            steps.forEach(s => stepObs.observe(s));
+        })();
+
+        /* ════════════════════════════════════════
+           ABOUT SECTION — CANVAS CIRCUIT LINES
+        ════════════════════════════════════════ */
+        (function () {
+            const about = document.querySelector('.about');
+            if (!about) return;
+            const canvas = document.createElement('canvas');
+            canvas.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0.25';
+            about.style.position = 'relative';
+            about.insertBefore(canvas, about.firstChild);
+            const ctx = canvas.getContext('2d');
+            let W, H, lines = [];
+
+            function resize() { W = canvas.width = about.offsetWidth; H = canvas.height = about.offsetHeight; }
+
+            class Line {
+                constructor() { this.reset(); }
+                reset() {
+                    this.x = Math.random() * W; this.y = Math.random() * H;
+                    this.len = Math.random() * 90 + 30;
+                    this.angle = Math.random() < 0.5 ? 0 : Math.PI / 2;
+                    this.speed = Math.random() * 0.35 + 0.12;
+                    this.progress = 0; this.alpha = 0; this.maxAlpha = Math.random() * 0.1 + 0.03;
+                    this.phase = 'in';
+                    this.color = Math.random() < 0.5 ? '#f71352' : '#6e34de';
+                }
+                update() {
+                    if (this.phase === 'in') { this.alpha = Math.min(this.maxAlpha, this.alpha + 0.003); if (this.alpha >= this.maxAlpha) this.phase = 'hold'; }
+                    else if (this.phase === 'hold') { this.progress += this.speed; if (this.progress >= 100) this.phase = 'out'; }
+                    else { this.alpha -= 0.006; if (this.alpha <= 0) this.reset(); }
+                }
+                draw() {
+                    const prog = Math.min(this.progress / 100, 1);
+                    const ex = this.x + Math.cos(this.angle) * this.len * prog;
+                    const ey = this.y + Math.sin(this.angle) * this.len * prog;
+                    ctx.save();
+                    ctx.globalAlpha = this.alpha;
+                    ctx.beginPath(); ctx.moveTo(this.x, this.y); ctx.lineTo(ex, ey);
+                    ctx.strokeStyle = this.color;
+                    ctx.lineWidth = 1;
+                    ctx.stroke();
+                    ctx.restore();
+                }
+            }
+
+            resize();
+            lines = Array.from({ length: 25 }, () => new Line());
+
+            function loopAbout() {
+                ctx.clearRect(0, 0, W, H);
+                lines.forEach(l => { l.update(); l.draw(); });
+                requestAnimationFrame(loopAbout);
+            }
+            loopAbout();
+
+            window.addEventListener('resize', resize, { passive: true });
+        })();
+    </script>
+</body>
+
+</html>
